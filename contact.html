@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | QuantumTrust</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .contact-content h2 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #5a5a5a;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .contact-info {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .contact-info p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .contact-info a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .btn-home {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-home:hover {
+            background-color: #004494;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            background-color: #0056b3;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">QuantumTrust</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-section">
+        <h1>Contáctanos</h1>
+        <p>Estamos listos para ayudarte a proteger y optimizar tu infraestructura. Envíanos un mensaje o contáctanos por nuestros otros medios.</p>
+
+        <section class="contact-content">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+
+            <div class="contact-info">
+                <h2>Otras formas de contacto</h2>
+                <p><strong>Teléfono:</strong> <a href="tel:+5493492404094">+54 9 3492 404094</a></p>
+                <p><strong>Email:</strong> <a href="mailto:candresesteban@hotmail.com">candresesteban@hotmail.com</a></p>
+                <p><strong>Ubicación:</strong> Rafaela, Santa Fe, Argentina</p>
+            </div>
+        </section>
+        <a href="index.html" class="btn-home">Volver a la página de inicio</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 QuantumTrust. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
