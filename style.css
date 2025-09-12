@@ -159,7 +159,7 @@ a:hover {
     /* Agrega la imagen de fondo y la superposición oscura */
     background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('assets/images/imagen-hero.jpg') no-repeat center center;
+        url('assets/images/inicio/24873b88-e80e-4daf-8c9c-958fb08d95eb.png') no-repeat center center;
     
     background-size: cover;
     background-attachment: fixed; /* Opcional: efecto de paralaje al hacer scroll */
@@ -577,3 +577,4 @@ a:hover {
         font-size: 1.5em;
     }
 }
+
