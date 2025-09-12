@@ -156,29 +156,38 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    background: var(--dark-gray-background) url('https://via.placeholder.com/1920x800?text=Estrategias+Ciberseguridad') no-repeat center center/cover;
+    /* Agrega la imagen de fondo y la superposición oscura */
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('assets/images/imagen-hero.jpg') no-repeat center center;
+    
+    background-size: cover;
+    background-attachment: fixed; /* Opcional: efecto de paralaje al hacer scroll */
     color: var(--light-text-color);
-    min-height: 80vh;
+    min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: left;
-    padding-top: 100px;
+    text-align: center;
+    padding-top: 0;
 }
 
 .hero-content {
-    max-width: 600px;
-    margin-left: 50px;
+    max-width: 800px;
 }
 
 .hero-content h1 {
-    font-size: 4em;
+    font-size: 4.5em;
+    font-weight: bold;
     margin-bottom: 20px;
+    color: var(--light-text-color);
 }
 
 .hero-content p {
     font-size: 1.5em;
     line-height: 1.4;
     max-width: 500px;
+    margin: 0 auto 30px;
 }
 
 /* About Section y Why Us Section */
