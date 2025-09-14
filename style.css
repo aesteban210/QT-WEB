@@ -89,8 +89,8 @@ a:hover {
 
 /* Header */
 .header {
-    background-color: var(--light-text-color);
-    color: var(--text-color);
+    background-color: var(--dark-gray-background);
+    color: var(--light-text-color);
     padding: 20px 0;
     width: 100%;
 }
@@ -106,7 +106,7 @@ a:hover {
     font-weight: bold;
     display: flex;
     align-items: center;
-    color: var(--text-color);
+    color: var(--light-text-color);
 }
 
 .logo img {
@@ -124,7 +124,7 @@ a:hover {
 }
 
 .nav-menu ul li a {
-    color: var(--text-color);
+    color: var(--light-text-color);
     font-weight: bold;
     padding: 5px 0;
     position: relative;
