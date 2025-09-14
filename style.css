@@ -89,13 +89,10 @@ a:hover {
 
 /* Header */
 .header {
-    background-color: transparent;
-    color: var(--light-text-color);
+    background-color: var(--light-text-color);
+    color: var(--text-color);
     padding: 20px 0;
-    position: fixed;
     width: 100%;
-    z-index: 1000;
-    box-shadow: none;
 }
 
 .nav-bar {
@@ -109,7 +106,7 @@ a:hover {
     font-weight: bold;
     display: flex;
     align-items: center;
-    color: var(--light-text-color);
+    color: var(--text-color);
 }
 
 .logo img {
@@ -127,7 +124,7 @@ a:hover {
 }
 
 .nav-menu ul li a {
-    color: var(--light-text-color);
+    color: var(--text-color);
     font-weight: bold;
     padding: 5px 0;
     position: relative;
@@ -576,5 +573,3 @@ a:hover {
         font-size: 1.5em;
     }
 }
-
-
