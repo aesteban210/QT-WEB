@@ -574,3 +574,76 @@ a:hover {
     }
 }
 
+/* Estilos para la página de servicios */
+.services-hero-section {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('assets/images/services/cybersecurity-24.jpeg') no-repeat center center;
+    background-size: cover;
+    color: var(--light-text-color);
+    min-height: 70vh; /* Un poco más pequeña que la principal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px; /* Para que el contenido no quede detrás del header */
+}
+
+.services-hero-section h1 {
+    font-size: 3.5em;
+    color: var(--light-text-color);
+}
+
+.services-hero-section p {
+    font-size: 1.2em;
+}
+
+.services-detailed-section {
+    padding: 80px 0;
+    background-color: var(--light-text-color);
+    text-align: center;
+}
+
+.services-detailed-section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+}
+
+.services-grid-detailed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-item-detailed {
+    background-color: var(--gray-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.service-item-detailed img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.service-item-detailed h3 {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}
+
+.service-item-detailed p {
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .services-hero-section h1 {
+        font-size: 2.5em;
+    }
+}
