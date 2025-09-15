@@ -3,160 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestros Servicios | QuantumTrust</title>
+    <title>Nuestros Servicios - QuantumTrust</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .service-section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .service-category {
-            max-width: 800px;
-            margin: 0 auto 60px;
-            background-color: #f9f9f9;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .service-category h2 {
-            color: #333;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #5a5a5a;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-        .service-category ul {
-            list-style: none;
-            padding: 0;
-            text-align: left;
-        }
-        .service-category li {
-            background-color: #fff;
-            margin-bottom: 15px;
-            padding: 20px;
-            border-radius: 6px;
-            border-left: 5px solid #0056b3;
-            transition: transform 0.2s;
-        }
-        .service-category li:hover {
-            transform: translateY(-5px);
-        }
-        .service-category h3 {
-            color: #0056b3;
-            margin-top: 0;
-            font-size: 1.5em;
-        }
-        .service-category p {
-            color: #666;
-            line-height: 1.6;
-        }
-        .btn-home {
-            display: inline-block;
-            background-color: #0056b3;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
-        }
-        .btn-home:hover {
-            background-color: #004494;
-        }
-    </style>
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/FFFFFF/shield.png" type="image/png">
 </head>
 <body>
-
-    <header>
-        <div class="header-container">
-            <h1 class="logo">QuantumTrust</h1>
-            <nav>
+    <header class="header">
+        <div class="container nav-bar">
+            <div class="logo">
+                <img src="assets/images/inicio/Lucid_Origin_Minimalist_and_futuristic_logo_design_for_a_cyber_sin_fondo2_escudo.png" alt="QuantumTrust Logo">
+                QuantumTrust
+            </div>
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="services.html">Servicios</a></li>
-                    <li><a href="index.html#contact">Contacto</a></li>
+                    <li><a href="about.html">Quiénes Somos</a></li>
+                    <li><a href="general.html">Valor Diferencial</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="service-section">
-        <h1>Nuestros Servicios</h1>
-        <p>En QuantumTrust, ofrecemos un enfoque integral para la seguridad y optimización de tu infraestructura tecnológica. A continuación, detallamos nuestros servicios especializados.</p>
+    <section class="services-hero-section">
+        <div class="container hero-content">
+            <h1>Servicios de Ciberseguridad y Redes</h1>
+            <p>Protege tu futuro digital con soluciones integrales y especializadas.</p>
+        </div>
+    </section>
 
-        <section class="service-category">
-            <h2>Servicios de Ciberseguridad</h2>
-            <ul>
-                <li>
-                    <h3>Pentesting y Auditorías de Seguridad</h3>
-                    <p>Evaluación de vulnerabilidades y pruebas de penetración para identificar riesgos antes de que sean explotados.</p>
-                </li>
-                <li>
-                    <h3>Estrategia y Gestión de Ciberseguridad</h3>
-                    <p>Definición de planes estratégicos de seguridad adaptados a tu negocio.</p>
-                </li>
-                <li>
+    <section class="services-detailed-section">
+        <div class="container">
+            <h2>Nuestra oferta para tu negocio</h2>
+            <div class="services-grid-detailed">
+                <div class="service-item-detailed">
+                    <img src="assets/images/services/image_fcb304.jpg" alt="Auditoría de ciberseguridad">
+                    <h3>Evaluación de Riesgos y Auditorías</h3>
+                    <p>Identificamos y analizamos las vulnerabilidades de tus sistemas para fortalecer tus defensas contra ciberataques.</p>
+                </div>
+                <div class="service-item-detailed">
+                    <img src="assets/images/services/cybersecurity-22.jpeg" alt="Estrategia de seguridad en la nube">
                     <h3>Implementación de Zero Trust</h3>
-                    <p>Modelos de seguridad que eliminan la confianza implícita y reducen la superficie de ataque.</p>
-                </li>
-                <li>
-                    <h3>Gestión de Riesgos y Cumplimiento</h3>
-                    <p>Asesoría en políticas, regulaciones y mejores prácticas para cumplir con normativas y estándares.</p>
-                </li>
-                <li>
-                    <h3>Monitoreo y Planes de Recuperación ante Incidentes</h3>
-                    <p>Diseño de planes de recuperación ante incidentes de seguridad.</p>
-                </li>
-            </ul>
-        </section>
+                    <p>Diseñamos y aplicamos estrategias de seguridad para optimizar la protección y la confianza en tu infraestructura tecnológica.</p>
+                </div>
+                <div class="service-item-detailed">
+                    <img src="assets/images/services/cybersecurity-24.jpeg" alt="Ingeniero en ciberseguridad">
+                    <h3>Gestión de Seguridad</h3>
+                    <p>Ofrecemos soluciones personalizadas para gestionar incidentes, garantizar la resiliencia y la continuidad de tu negocio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="service-category">
-            <h2>Servicios de Networking Avanzado</h2>
-            <ul>
-                <li>
-                    <h3>Diseño y Arquitectura de Redes Seguras</h3>
-                    <p>Segmentación, hardening y configuración de infraestructuras resilientes.</p>
-                </li>
-                <li>
-                    <h3>Alta Disponibilidad y Calidad (HA & QoS)</h3>
-                    <p>Implementación de soluciones que aseguren continuidad operativa y performance.</p>
-                </li>
-                <li>
-                    <h3>Firewalls, WAF y Balanceadores de Carga</h3>
-                    <p>Configuración avanzada para proteger y optimizar tus aplicaciones y servicios.</p>
-                </li>
-                <li>
-                    <h3>SD-WAN y Virtualización de Redes</h3>
-                    <p>Soluciones modernas que aumentan la eficiencia y reducen costos.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="service-category">
-            <h2>Servicios de IT y Mantenimiento</h2>
-            <ul>
-                <li>
-                    <h3>Mantenimiento Preventivo y Correctivo</h3>
-                    <p>Mantenimiento de estaciones de trabajo y servidores.</p>
-                </li>
-                <li>
-                    <h3>Gestión de Parches y Actualizaciones</h3>
-                    <p>Gestión de parches y actualizaciones de seguridad.</p>
-                </li>
-                <li>
-                    <h3>Soporte Técnico Especializado</h3>
-                    <p>Soporte técnico especializado para empresas.</p>
-                </li>
-            </ul>
-        </section>
-        <a href="index.html" class="btn-home">Volver a la página de inicio</a>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 QuantumTrust. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>QuantumTrust</h3>
+                    <p>Protegiendo tu negocio en línea</p>
+                    <form class="newsletter-form">
+                        <label for="newsletter-email">Email *</label>
+                        <input type="email" id="newsletter-email" name="newsletter-email" required>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            <label for="subscribe">Yes, subscribe me to your newsletter. *</label>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                    </form>
+                </div>
+                <div class="footer-col contact-info">
+                    <p>52-1-33-12345678</p>
+                    <p>info@sitio.com</p>
+                    <p>Av. Coba 202, Cancún, Q.R., México</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><img src="https://img.icons8.com/ios-filled/24/FFFFFF/facebook-new.png" alt="Facebook"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="https://img.icons8.com/ios-filled/24/FFFFFF/twitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="https://img.icons8.com/ios-filled/24/FFFFFF/instagram-new.png" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/in/andres-esteban-31b9781b6" target="_blank"><img src="https://img.icons8.com/ios-filled/24/FFFFFF/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="footer-col legal-links">
+                    <ul>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Declaración de Accesibilidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Reembolso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>
