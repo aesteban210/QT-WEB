@@ -1,0 +1,22 @@
+# Ignora directorios de dependencias, como los creados por npm o yarn
+/node_modules
+/vendor
+/dist
+
+# Ignora archivos de registro y de depuración
+*.log
+npm-debug.log*
+
+# Ignora archivos de sistema y de configuración de IDEs y editores de texto
+.DS_Store             # Archivos de macOS
+.env                  # Archivo de variables de entorno (sensibles)
+.vscode/              # Carpeta de configuración de Visual Studio Code
+.idea/                # Carpeta de configuración de JetBrains (WebStorm, etc.)
+
+# Ignora archivos de compilación y caché
+/build
+/cache
+/.parcel-cache
+
+# Ignora archivos generados durante el despliegue
+/public/assets        # Si tus activos se generan dinámicamente
