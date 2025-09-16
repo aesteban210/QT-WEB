@@ -647,3 +647,74 @@ a:hover {
         font-size: 2.5em;
     }
 }
+/* Estilos para la página de "Quiénes Somos" */
+.about-hero-section {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('assets/images/about/image_b5ba52.jpg') no-repeat center center;
+    background-size: cover;
+    color: var(--light-text-color);
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.about-hero-section h1 {
+    font-size: 3.5em;
+    color: var(--light-text-color);
+}
+
+.about-content-section {
+    padding: 80px 0;
+    background-color: var(--light-text-color);
+}
+
+.about-grid {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+/* Responsive para la página de "Quiénes Somos" */
+@media (max-width: 992px) {
+    .about-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image, .about-text {
+        max-width: 100%;
+    }
+}
