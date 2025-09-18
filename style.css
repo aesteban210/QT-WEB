@@ -649,15 +649,6 @@ a:hover {
     .hero-content p {
         font-size: 1.2em;
     }
-    .about-section .container, .why-us-section .container, .contact-section .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .about-text-content, .why-us-text-content, .about-description, .why-us-description, .contact-form-container, .contact-image {
-        max-width: 100%;
-        text-align: center;
-    }
     .grid-2-col {
         flex-direction: column;
         align-items: center;
@@ -700,6 +691,7 @@ a:hover {
         font-size: 2.5em;
     }
 }
+
 
 
 
