@@ -487,3 +487,30 @@ a:hover {
         font-size: 1.5em;
     }
 }
+
+/* Asegura que todas las imágenes sean responsivas dentro de sus contenedores */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Reglas específicas para la imagen de la página 'Quiénes Somos' */
+.about-image-container {
+    flex: 1;
+    max-width: 45%;
+}
+
+/* Modificación de la regla responsive para incluir el contenedor de la imagen */
+@media (max-width: 992px) {
+    .about-section .container, .why-us-section .container, .contact-section .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image-container {
+        max-width: 100%;
+        margin-top: 30px; /* Añade un espacio entre el texto y la imagen */
+    }
+}
