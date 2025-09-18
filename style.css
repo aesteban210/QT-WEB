@@ -311,6 +311,36 @@ a:hover {
     color: #888;
 }
 
+/* About Section y Services */
+.about-section, .services-section {
+    background-color: var(--light-text-color);
+    padding: 80px 0;
+}
+
+.about-section .container, .services-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.about-text-content, .services-text-content {
+    flex: 1;
+    max-width: 40%;
+}
+
+.about-text-content h2, .services-text-content h2 {
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.about-description, .services-description {
+    flex: 2;
+    max-width: 60%;
+    font-size: 1.1em;
+}
+
 /* Research Section */
 .research-section {
     background-color: var(--gray-background);
@@ -792,3 +822,4 @@ a:hover {
         max-width: 100%;
     }
 }
+
