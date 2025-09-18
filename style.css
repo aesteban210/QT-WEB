@@ -1,61 +1,50 @@
-/* Variables CSS */
+/* Bloque de estilos generales que se aplican a toda la página */
 :root {
-    --primary-color: #007bff; /* Azul brillante */
-    --secondary-color: #0d1a2f; /* Azul oscuro casi negro */
+    --primary-color: #007bff;
+    --secondary-color: #0d1a2f;
     --text-color: #333;
-    --light-text-color: #f8f9fa; /* Blanco grisáceo */
-    --gray-background: #f4f7f6; /* Fondo gris claro para secciones */
-    --dark-gray-background: #1a1a2e; /* Fondo oscuro para el header y hero */
+    --light-text-color: #f8f9fa;
+    --gray-background: #f4f7f6;
+    --dark-gray-background: #1a1a2e;
     --font-family: 'Arial', sans-serif;
     --heading-font-family: 'Helvetica Neue', sans-serif;
 }
-
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: var(--font-family);
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--light-text-color);
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
-/* Tipografía */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font-family);
     color: var(--secondary-color);
     margin-bottom: 20px;
     line-height: 1.2;
 }
-
 h1 { font-size: 3.5em; color: var(--light-text-color); }
 h2 { font-size: 2.5em; }
 h3 { font-size: 1.8em; }
-
 p {
     margin-bottom: 15px;
 }
-
 a {
     color: var(--primary-color);
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
-/* Botones */
+/* Bloque de estilos para botones */
 .btn {
     display: inline-block;
     padding: 12px 25px;
@@ -64,43 +53,36 @@ a:hover {
     text-align: center;
     transition: background-color 0.3s ease;
 }
-
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--light-text-color);
     border: 2px solid var(--primary-color);
 }
-
 .btn-primary:hover {
-    background-color: #0056b3; /* Usando un color más oscuro */
+    background-color: #0056b3;
     border-color: #0056b3;
 }
-
 .btn-secondary {
     background-color: var(--secondary-color);
     color: var(--light-text-color);
     border: 2px solid var(--secondary-color);
 }
-
 .btn-secondary:hover {
-    background-color: #040c1a; /* Usando un color más oscuro */
+    background-color: #040c1a;
     border-color: #040c1a;
 }
-
-/* Header */
+/* Bloque de estilos para el Header y el menú de navegación */
 .header {
     background-color: var(--dark-gray-background);
     color: var(--light-text-color);
     padding: 20px 0;
     width: 100%;
 }
-
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
     font-size: 1.8em;
     font-weight: bold;
@@ -108,21 +90,17 @@ a:hover {
     align-items: center;
     color: var(--light-text-color);
 }
-
 .logo img {
     height: 60px;
     margin-right: 10px;
 }
-
 .nav-menu ul {
     list-style: none;
     display: flex;
 }
-
 .nav-menu ul li {
     margin-left: 30px;
 }
-
 .nav-menu ul li a {
     color: var(--light-text-color);
     font-weight: bold;
@@ -130,7 +108,6 @@ a:hover {
     position: relative;
     transition: color 0.3s ease;
 }
-
 .nav-menu ul li a::after {
     content: '';
     position: absolute;
@@ -141,99 +118,84 @@ a:hover {
     background-color: var(--primary-color);
     transition: width 0.3s ease;
 }
-
 .nav-menu ul li a:hover::after {
     width: 100%;
 }
-
 .nav-menu ul li a:hover {
     color: var(--primary-color);
     text-decoration: none;
 }
-
-/* Hero Section */
+/* Bloque de estilos para la sección principal (Hero) */
 .hero-section {
     background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('assets/images/inicio/24873b88-e80e-4daf-8c9c-958fb08d95eb.png') no-repeat center center;
     
     background-size: cover;
-    background-attachment: fixed; /* Opcional: efecto de paralaje al hacer scroll */
+    background-attachment: fixed;
     color: var(--light-text-color);
-    min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding-top: 0;
 }
-
 .hero-content {
     max-width: 800px;
 }
-
 .hero-content h1 {
     font-size: 4.5em;
     font-weight: bold;
     margin-bottom: 20px;
     color: var(--light-text-color);
 }
-
 .hero-content p {
     font-size: 1.5em;
     line-height: 1.4;
     max-width: 500px;
     margin: 0 auto 30px;
 }
-
-/* About Section y Why Us Section */
+/* Bloque de estilos para las secciones "Quiénes Somos" y "Valor Diferencial" */
 .about-section, .why-us-section {
     background-color: var(--light-text-color);
     padding: 80px 0;
 }
-
 .about-section .container, .why-us-section .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
 }
-
 .about-text-content, .why-us-text-content {
     flex: 1;
     max-width: 40%;
 }
-
 .about-text-content h2, .why-us-text-content h2 {
     font-size: 3em;
     color: var(--secondary-color);
     margin-bottom: 30px;
 }
-
 .about-description, .why-us-description {
     flex: 2;
     max-width: 60%;
     font-size: 1.1em;
 }
-
-/* Services Section */
+/* Bloque de estilos para la sección de servicios */
 .services-section {
     background-color: var(--gray-background);
     padding: 80px 0;
     text-align: left;
 }
-
 .services-section h2 {
     color: var(--secondary-color);
     margin-bottom: 50px;
 }
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
-
 .service-item {
     background-color: var(--light-text-color);
     padding: 20px;
@@ -241,37 +203,67 @@ a:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: left;
 }
-
 .service-item img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
 }
-
 .service-item p {
     font-size: 1.1em;
     color: var(--text-color);
 }
-
-/* Blog Section */
+/* Bloque de estilos para la sección de investigación */
+.research-section {
+    background-color: var(--gray-background);
+    padding: 80px 0;
+    text-align: center;
+}
+.research-section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+.research-section h3 {
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+}
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.research-item {
+    background-color: var(--light-text-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+.research-item h4 {
+    font-size: 1.6em;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+.research-item p {
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+/* Bloque de estilos para la sección de blog */
 .blog-section {
     background-color: var(--light-text-color);
     padding: 80px 0;
     text-align: center;
 }
-
 .blog-section h2 {
     color: var(--secondary-color);
     margin-bottom: 50px;
 }
-
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
-
 .blog-post {
     background-color: var(--light-text-color);
     border: 1px solid #ddd;
@@ -280,120 +272,64 @@ a:hover {
     text-align: left;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
-
 .blog-post img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
-
 .blog-post .author {
     font-size: 0.9em;
     color: #666;
     margin: 15px 15px 5px 15px;
 }
-
 .blog-post h3 {
     font-size: 1.4em;
     margin: 0 15px 10px 15px;
     color: var(--secondary-color);
 }
-
 .blog-post p {
     font-size: 1em;
     color: #555;
     margin: 0 15px 15px 15px;
 }
-
 .blog-post .post-meta {
     padding: 0 15px 15px 15px;
     font-size: 0.9em;
     color: #888;
 }
-
-/* Research Section */
-.research-section {
-    background-color: var(--gray-background);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.research-section h2 {
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-}
-
-.research-section h3 {
-    color: #666;
-    margin-bottom: 50px;
-    font-size: 1.5em;
-}
-
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.research-item {
-    background-color: var(--light-text-color);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: left;
-}
-
-.research-item h4 {
-    font-size: 1.6em;
-    color: var(--secondary-color);
-    margin-bottom: 15px;
-}
-
-.research-item p {
-    font-size: 1.1em;
-    color: var(--text-color);
-}
-
-/* Contact Section */
+/* Bloque de estilos para la sección de contacto */
 .contact-section {
     background-color: var(--light-text-color);
     padding: 80px 0;
 }
-
 .contact-section .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
 }
-
 .contact-form-container {
     flex: 1;
     max-width: 50%;
 }
-
 .contact-form-container h2 {
     font-size: 3em;
     color: var(--secondary-color);
     margin-bottom: 20px;
 }
-
 .contact-form-container p {
     margin-bottom: 30px;
     font-size: 1.1em;
 }
-
 .contact-form label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     color: var(--text-color);
 }
-
 .contact-form label .required {
     color: var(--primary-color);
 }
-
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
@@ -404,62 +340,52 @@ a:hover {
     border-radius: 5px;
     font-size: 1em;
 }
-
 .contact-form textarea {
     min-height: 120px;
     resize: vertical;
 }
-
 .contact-form button {
     width: auto;
     padding: 12px 30px;
     cursor: pointer;
 }
-
 .contact-image {
     flex: 1;
     max-width: 50%;
     text-align: right;
 }
-
 .contact-image img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-
-/* Footer */
+/* Bloque de estilos para el footer */
 .footer {
     background-color: var(--dark-gray-background);
     color: var(--light-text-color);
     padding: 60px 0;
 }
-
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-
 .footer-col h3 {
     color: var(--light-text-color);
     margin-bottom: 20px;
 }
-
 .footer-col p {
     font-size: 0.95em;
     margin-bottom: 15px;
     color: #bbb;
 }
-
 .newsletter-form label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
     color: var(--light-text-color);
 }
-
 .newsletter-form input[type="email"] {
     width: 100%;
     padding: 10px;
@@ -469,58 +395,47 @@ a:hover {
     color: var(--light-text-color);
     margin-bottom: 10px;
 }
-
 .newsletter-form .checkbox-group {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-
 .newsletter-form .checkbox-group input[type="checkbox"] {
     margin-right: 10px;
 }
-
 .newsletter-form .checkbox-group label {
     margin-bottom: 0;
     font-weight: normal;
     color: #bbb;
 }
-
 .footer-col.contact-info p {
     margin-bottom: 10px;
 }
-
 .social-icons {
     margin-top: 20px;
     display: flex;
     gap: 15px;
 }
-
 .social-icons img {
     height: 24px;
     width: 24px;
     filter: invert(1);
 }
-
 .legal-links ul {
     list-style: none;
 }
-
 .legal-links ul li {
     margin-bottom: 10px;
 }
-
 .legal-links ul li a {
     color: #bbb;
     font-size: 0.9em;
 }
-
 .legal-links ul li a:hover {
     color: var(--primary-color);
     text-decoration: underline;
 }
-
-/* Responsive Design */
+/* Bloque de estilos para diseño responsivo */
 @media (max-width: 992px) {
     .nav-menu {
         display: none;
@@ -554,7 +469,6 @@ a:hover {
         justify-content: center;
     }
 }
-
 @media (max-width: 768px) {
     .hero-content {
         margin-left: 0;
@@ -573,223 +487,3 @@ a:hover {
         font-size: 1.5em;
     }
 }
-
-/* Estilos para la página de servicios */
-.services-hero-section {
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('assets/images/services/cybersecurity-24.jpeg') no-repeat center center;
-    background-size: cover;
-    color: var(--light-text-color);
-    min-height: 70vh; /* Un poco más pequeña que la principal */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 60px; /* Para que el contenido no quede detrás del header */
-}
-
-.services-hero-section h1 {
-    font-size: 3.5em;
-    color: var(--light-text-color);
-}
-
-.services-hero-section p {
-    font-size: 1.2em;
-}
-
-.services-detailed-section {
-    padding: 80px 0;
-    background-color: var(--light-text-color);
-    text-align: center;
-}
-
-.services-detailed-section h2 {
-    color: var(--secondary-color);
-    margin-bottom: 50px;
-}
-
-.services-grid-detailed {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.service-item-detailed {
-    background-color: var(--gray-background);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: left;
-}
-
-.service-item-detailed img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.service-item-detailed h3 {
-    font-size: 1.5em;
-    color: var(--secondary-color);
-}
-
-.service-item-detailed p {
-    font-size: 1em;
-    color: var(--text-color);
-}
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-    .services-hero-section h1 {
-        font-size: 2.5em;
-    }
-}
-/* Estilos para la página de "Quiénes Somos" */
-.about-hero-section {
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('assets/images/about/image_b5ba52.jpg') no-repeat center center;
-    background-size: cover;
-    color: var(--light-text-color);
-    min-height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 60px;
-}
-
-.about-hero-section h1 {
-    font-size: 3.5em;
-    color: var(--light-text-color);
-}
-
-.about-content-section {
-    padding: 80px 0;
-    background-color: var(--light-text-color);
-}
-
-.about-grid {
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
-}
-
-.about-image {
-    flex: 1;
-    max-width: 50%;
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.about-text {
-    flex: 1;
-    max-width: 50%;
-}
-
-.about-text h2 {
-    font-size: 2.5em;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
-}
-
-.about-text p {
-    font-size: 1.1em;
-    color: var(--text-color);
-}
-
-/* Responsive para la página de "Quiénes Somos" */
-@media (max-width: 992px) {
-    .about-grid {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about-image, .about-text {
-        max-width: 100%;
-    }
-}
-/* Estilos para la página de "Valor Diferencial" */
-.general-hero-section {
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('https://via.placeholder.com/1920x800?text=Valor+Diferencial') no-repeat center center;
-    background-size: cover;
-    color: var(--light-text-color);
-    min-height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 60px;
-}
-
-.general-hero-section h1 {
-    font-size: 3.5em;
-    color: var(--light-text-color);
-}
-
-.general-content-section {
-    padding: 80px 0;
-    background-color: var(--gray-background);
-}
-
-.general-grid {
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
-}
-
-.general-text {
-    flex: 1;
-    max-width: 50%;
-}
-
-.general-text h2 {
-    font-size: 2.5em;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
-}
-
-.general-text p {
-    font-size: 1.1em;
-    color: var(--text-color);
-}
-
-.general-images {
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.general-images img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* Responsive para la página de "Valor Diferencial" */
-@media (max-width: 992px) {
-    .general-grid {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .general-text, .general-images {
-        max-width: 100%;
-    }
-}
-
