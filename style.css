@@ -1,4 +1,7 @@
-/* Variables CSS */
+/* ==========================================================================
+   1. Variables CSS y configuración general
+   ========================================================================== */
+
 :root {
     --primary-color: #007bff; /* Azul brillante */
     --secondary-color: #0d1a2f; /* Azul oscuro casi negro */
@@ -30,7 +33,10 @@ body {
     padding: 0 20px;
 }
 
-/* Tipografía */
+/* ==========================================================================
+   2. Estilos de Tipografía y Enlaces
+   ========================================================================== */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font-family);
     color: var(--secondary-color);
@@ -55,6 +61,10 @@ a:hover {
     text-decoration: underline;
 }
 
+/* ==========================================================================
+   3. Componentes Reutilizables (Botones, Grillas, etc.)
+   ========================================================================== */
+
 /* Botones */
 .btn {
     display: inline-block;
@@ -63,6 +73,7 @@ a:hover {
     font-weight: bold;
     text-align: center;
     transition: background-color 0.3s ease;
+    text-decoration: none; /* Asegura que los botones se vean bien */
 }
 
 .btn-primary {
@@ -72,7 +83,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Usando un color más oscuro */
+    background-color: #0056b3;
     border-color: #0056b3;
 }
 
@@ -83,9 +94,31 @@ a:hover {
 }
 
 .btn-secondary:hover {
-    background-color: #040c1a; /* Usando un color más oscuro */
+    background-color: #040c1a;
     border-color: #040c1a;
 }
+
+/* Grillas genéricas */
+.grid-2-col {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.grid-2-col > * {
+    flex: 1;
+    max-width: 50%;
+}
+
+.grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* ==========================================================================
+   4. Estilos de Secciones de la Página Principal (Home)
+   ========================================================================== */
 
 /* Header */
 .header {
@@ -153,14 +186,13 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    background: 
+    background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('assets/images/inicio/24873b88-e80e-4daf-8c9c-958fb08d95eb.png') no-repeat center center;
-    
     background-size: cover;
-    background-attachment: fixed; /* Opcional: efecto de paralaje al hacer scroll */
+    background-attachment: fixed;
     color: var(--light-text-color);
-    min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,52 +218,26 @@ a:hover {
     margin: 0 auto 30px;
 }
 
-/* About Section y Why Us Section */
-.about-section, .why-us-section {
-    background-color: var(--light-text-color);
+/* About Section */
+.about-section {
     padding: 80px 0;
+    background-color: var(--light-text-color);
 }
 
-.about-section .container, .why-us-section .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
+.about-section .grid-2-col > * {
+    text-align: left;
 }
 
-.about-text-content, .why-us-text-content {
-    flex: 1;
-    max-width: 40%;
-}
-
-.about-text-content h2, .why-us-text-content h2 {
-    font-size: 3em;
-    color: var(--secondary-color);
-    margin-bottom: 30px;
-}
-
-.about-description, .why-us-description {
-    flex: 2;
-    max-width: 60%;
-    font-size: 1.1em;
-}
-
-/* Services Section */
+/* Servicios Section */
 .services-section {
     background-color: var(--gray-background);
     padding: 80px 0;
-    text-align: left;
+    text-align: center;
 }
 
 .services-section h2 {
     color: var(--secondary-color);
     margin-bottom: 50px;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
 }
 
 .service-item {
@@ -249,11 +255,6 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.service-item p {
-    font-size: 1.1em;
-    color: var(--text-color);
-}
-
 /* Blog Section */
 .blog-section {
     background-color: var(--light-text-color);
@@ -264,12 +265,6 @@ a:hover {
 .blog-section h2 {
     color: var(--secondary-color);
     margin-bottom: 50px;
-}
-
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
 }
 
 .blog-post {
@@ -311,36 +306,6 @@ a:hover {
     color: #888;
 }
 
-/* About Section y Services */
-.about-section, .services-section {
-    background-color: var(--light-text-color);
-    padding: 80px 0;
-}
-
-.about-section .container, .services-section .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
-}
-
-.about-text-content, .services-text-content {
-    flex: 1;
-    max-width: 40%;
-}
-
-.about-text-content h2, .services-text-content h2 {
-    font-size: 3em;
-    color: var(--secondary-color);
-    margin-bottom: 30px;
-}
-
-.about-description, .services-description {
-    flex: 2;
-    max-width: 60%;
-    font-size: 1.1em;
-}
-
 /* Research Section */
 .research-section {
     background-color: var(--gray-background);
@@ -357,12 +322,6 @@ a:hover {
     color: #666;
     margin-bottom: 50px;
     font-size: 1.5em;
-}
-
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
 }
 
 .research-item {
@@ -386,20 +345,12 @@ a:hover {
 
 /* Contact Section */
 .contact-section {
-    background-color: var(--light-text-color);
     padding: 80px 0;
+    background-color: var(--light-text-color);
 }
 
-.contact-section .container {
-    display: flex;
-    justify-content: space-between;
+.contact-section .grid-2-col {
     align-items: center;
-    gap: 50px;
-}
-
-.contact-form-container {
-    flex: 1;
-    max-width: 50%;
 }
 
 .contact-form-container h2 {
@@ -447,8 +398,6 @@ a:hover {
 }
 
 .contact-image {
-    flex: 1;
-    max-width: 50%;
     text-align: right;
 }
 
@@ -550,73 +499,23 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-    .nav-menu {
-        display: none;
-    }
-    .nav-bar .btn-primary {
-        display: none;
-    }
-    .hero-content h1 {
-        font-size: 3em;
-    }
-    .hero-content p {
-        font-size: 1.2em;
-    }
-    .about-section .container, .why-us-section .container, .contact-section .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .about-text-content, .why-us-text-content, .about-description, .why-us-description, .contact-form-container, .contact-image {
-        max-width: 100%;
-        text-align: center;
-    }
-    .about-text-content h2, .why-us-text-content h2, .contact-form-container h2 {
-        font-size: 2.5em;
-    }
-    .footer-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .social-icons {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-content {
-        margin-left: 0;
-        text-align: center;
-    }
-    .hero-content h1 {
-        font-size: 2.5em;
-    }
-    .hero-content p {
-        font-size: 1em;
-    }
-    .services-grid, .blog-grid, .research-grid {
-        grid-template-columns: 1fr;
-    }
-    .logo {
-        font-size: 1.5em;
-    }
-}
+/* ==========================================================================
+   5. Estilos de Secciones de Páginas Secundarias
+   ========================================================================== */
 
 /* Estilos para la página de servicios */
 .services-hero-section {
-    background: 
+    background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('assets/images/services/cybersecurity-24.jpeg') no-repeat center center;
     background-size: cover;
     color: var(--light-text-color);
-    min-height: 70vh; /* Un poco más pequeña que la principal */
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 60px; /* Para que el contenido no quede detrás del header */
+    padding-top: 60px;
 }
 
 .services-hero-section h1 {
@@ -671,15 +570,9 @@ a:hover {
     color: var(--text-color);
 }
 
-/* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-    .services-hero-section h1 {
-        font-size: 2.5em;
-    }
-}
 /* Estilos para la página de "Quiénes Somos" */
 .about-hero-section {
-    background: 
+    background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('assets/images/about/image_b5ba52.jpg') no-repeat center center;
     background-size: cover;
@@ -702,55 +595,9 @@ a:hover {
     background-color: var(--light-text-color);
 }
 
-.about-grid {
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
-}
-
-.about-image {
-    flex: 1;
-    max-width: 50%;
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.about-text {
-    flex: 1;
-    max-width: 50%;
-}
-
-.about-text h2 {
-    font-size: 2.5em;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
-}
-
-.about-text p {
-    font-size: 1.1em;
-    color: var(--text-color);
-}
-
-/* Responsive para la página de "Quiénes Somos" */
-@media (max-width: 992px) {
-    .about-grid {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about-image, .about-text {
-        max-width: 100%;
-    }
-}
 /* Estilos para la página de "Valor Diferencial" */
 .general-hero-section {
-    background: 
+    background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('https://via.placeholder.com/1920x800?text=Valor+Diferencial') no-repeat center center;
     background-size: cover;
@@ -773,28 +620,6 @@ a:hover {
     background-color: var(--gray-background);
 }
 
-.general-grid {
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
-}
-
-.general-text {
-    flex: 1;
-    max-width: 50%;
-}
-
-.general-text h2 {
-    font-size: 2.5em;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
-}
-
-.general-text p {
-    font-size: 1.1em;
-    color: var(--text-color);
-}
-
 .general-images {
     flex: 1;
     max-width: 50%;
@@ -810,16 +635,59 @@ a:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Responsive para la página de "Valor Diferencial" */
+/* ==========================================================================
+   6. Estilos Responsive
+   ========================================================================== */
+
 @media (max-width: 992px) {
-    .general-grid {
+    .nav-menu, .nav-bar .btn-primary {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 3em;
+    }
+    .hero-content p {
+        font-size: 1.2em;
+    }
+    .grid-2-col {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
-    .general-text, .general-images {
+    .grid-2-col > * {
         max-width: 100%;
+        text-align: center;
+    }
+    .about-text-content h2, .why-us-text-content h2, .contact-form-container h2 {
+        font-size: 2.5em;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
     }
 }
 
+@media (max-width: 768px) {
+    .hero-content {
+        margin-left: 0;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .services-grid, .blog-grid, .research-grid, .services-grid-detailed {
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        font-size: 1.5em;
+    }
+    .services-hero-section h1, .about-hero-section h1, .general-hero-section h1 {
+        font-size: 2.5em;
+    }
+}
