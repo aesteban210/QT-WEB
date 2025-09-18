@@ -220,7 +220,7 @@ a:hover {
 .services-section {
     background-color: var(--gray-background);
     padding: 80px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .services-section h2 {
@@ -792,3 +792,4 @@ a:hover {
         max-width: 100%;
     }
 }
+
