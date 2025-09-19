@@ -213,7 +213,7 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.about-description, .why-us-description, , .services-description {
+.about-description, .why-us-description, .services-description {
     flex: 2;
     max-width: 60%;
     font-size: 1.1em;
@@ -795,6 +795,7 @@ a:hover {
 /* ====================================================================== */
 /* Fin del archivo reordenado (contiene exactamente las reglas originales) */
 /* ====================================================================== */
+
 
 
 
