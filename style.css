@@ -759,10 +759,50 @@ a:hover {
         max-width: 100%;
     }
 }
+/* Estilos para el nuevo botón flotante de Contacto */
+.contact-btn {
+    /* Posición fija en la pantalla */
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
 
+    /* Estilos del botón */
+    background: linear-gradient(to right, #000, #ff8c00); /* Degradado de naranja a negro, de derecha a izquierda */
+    color: #fff;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0; /* Bordes redondeados solo en el lado derecho */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    /* Para que el texto se vea vertical */
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+/* Efecto al pasar el cursor (hover) */
+.contact-btn:hover {
+    background: linear-gradient(to right, #222, #ffa04d); /* Degradado ligeramente más claro */
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(-50%) scale(1.05); /* Escala ligeramente el botón */
+}
+
+/* Ajustes responsivos para evitar que el botón sea demasiado grande en móviles */
+@media (max-width: 768px) {
+    .contact-btn {
+        padding: 10px 8px;
+        font-size: 0.9em;
+    }
+}
 /* ====================================================================== */
 /* Fin del archivo reordenado (contiene exactamente las reglas originales) */
 /* ====================================================================== */
+
 
 
 
