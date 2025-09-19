@@ -759,49 +759,46 @@ a:hover {
         max-width: 100%;
     }
 }
-/* Estilos para el nuevo botón flotante de Contacto */
+/* Estilos para el nuevo botón flotante de Contacto (horizontal y a la derecha) */
 .contact-btn {
     /* Posición fija en la pantalla */
     position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    z-index: 1000;
+    bottom: 50px;  /* Se ubica a 50px del borde inferior */
+    right: 0;      /* Lo coloca en el borde derecho */
+    z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
 
     /* Estilos del botón */
-    background: linear-gradient(to right, #000, #ff8c00); /* Degradado de naranja a negro, de derecha a izquierda */
+    background: linear-gradient(to right, #ff8c00, #000); /* Degradado de naranja a negro */
     color: #fff;
-    padding: 15px 10px;
+    padding: 15px 25px;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: bold;
-    border-radius: 0 5px 5px 0; /* Bordes redondeados solo en el lado derecho */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px 0 0 5px; /* Bordes redondeados solo en el lado izquierdo */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: all 0.3s ease;
-
-    /* Para que el texto se vea vertical */
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
 }
 
 /* Efecto al pasar el cursor (hover) */
 .contact-btn:hover {
-    background: linear-gradient(to right, #222, #ffa04d); /* Degradado ligeramente más claro */
-    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.4);
-    transform: translateY(-50%) scale(1.05); /* Escala ligeramente el botón */
+    background: linear-gradient(to right, #ffa04d, #222); /* Degradado ligeramente más claro */
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); /* Escala ligeramente el botón */
 }
 
-/* Ajustes responsivos para evitar que el botón sea demasiado grande en móviles */
+/* Ajustes responsivos */
 @media (max-width: 768px) {
     .contact-btn {
-        padding: 10px 8px;
+        bottom: 20px;
+        padding: 12px 20px;
         font-size: 0.9em;
     }
 }
 /* ====================================================================== */
 /* Fin del archivo reordenado (contiene exactamente las reglas originales) */
 /* ====================================================================== */
+
 
 
 
