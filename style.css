@@ -499,16 +499,16 @@ a:hover {
     .hero-content p {
         font-size: 1.2em;
     }
-    .about-section .container, .why-us-section .container, .contact-section .container {
+    .about-section .container, .why-us-section .container, .services-section .container, .contact-section .container {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .about-text-content, .why-us-text-content, .about-description, .why-us-description, .contact-form-container, .contact-image {
+    .about-text-content, .why-us-text-content, .services-text-content, .about-description, .why-us-description, .services-description, .contact-form-container, .contact-image {
         max-width: 100%;
         text-align: center;
     }
-    .about-text-content h2, .why-us-text-content h2, .contact-form-container h2 {
+    .about-text-content h2, .why-us-text-content h2, .services-text-content h2, .contact-form-container h2 {
         font-size: 2.5em;
     }
     .footer-grid {
@@ -763,6 +763,7 @@ a:hover {
 /* ====================================================================== */
 /* Fin del archivo reordenado (contiene exactamente las reglas originales) */
 /* ====================================================================== */
+
 
 
 
