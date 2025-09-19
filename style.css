@@ -189,71 +189,34 @@ a:hover {
     margin: 0 auto 30px;
 }
 
-/* About Section y Why Us Section */
-.about-section, .why-us-section {
+/* About Section, Why Us Section y Services Section*/
+.about-section, .why-us-section, .services-section {
     background-color: var(--light-text-color);
     padding: 80px 0;
 }
 
-.about-section .container, .why-us-section .container {
+.about-section .container, .why-us-section .container, .services-section .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
 }
 
-.about-text-content, .why-us-text-content {
+.about-text-content, .why-us-text-content, .services-text-content {
     flex: 1;
     max-width: 40%;
 }
 
-.about-text-content h2, .why-us-text-content h2 {
+.about-text-content h2, .why-us-text-content h2, .services-text-content h2 {
     font-size: 3em;
     color: var(--secondary-color);
     margin-bottom: 30px;
 }
 
-.about-description, .why-us-description {
+.about-description, .why-us-description, , .services-description {
     flex: 2;
     max-width: 60%;
     font-size: 1.1em;
-}
-
-/* Services Section */
-.services-section {
-    background-color: var(--gray-background);
-    padding: 80px 0;
-}
-
-.services-section h2 {
-    color: var(--secondary-color);
-    margin-bottom: 50px;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.service-item {
-    background-color: var(--light-text-color);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.service-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.service-item p {
-    font-size: 1.1em;
-    color: var(--text-color);
 }
 
 /* Blog Section */
@@ -832,5 +795,6 @@ a:hover {
 /* ====================================================================== */
 /* Fin del archivo reordenado (contiene exactamente las reglas originales) */
 /* ====================================================================== */
+
 
 
