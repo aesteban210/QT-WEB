@@ -763,7 +763,7 @@ a:hover {
 .contact-btn {
     /* Posición fija en la pantalla */
     position: fixed;
-    bottom: 60px;  /* Se ubica a 60px del borde inferior */
+    bottom: 70px;  /* Se ubica a 60px del borde inferior */
     right: 0;      /* Lo coloca en el borde derecho */
     z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
 
@@ -798,6 +798,7 @@ a:hover {
 /* ====================================================================== */
 /* Fin del archivo reordenado (contiene exactamente las reglas originales) */
 /* ====================================================================== */
+
 
 
 
