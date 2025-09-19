@@ -223,7 +223,6 @@ a:hover {
 .services-section {
     background-color: var(--gray-background);
     padding: 80px 0;
-    text-align: left;
 }
 
 .services-section h2 {
@@ -833,3 +832,4 @@ a:hover {
 /* ====================================================================== */
 /* Fin del archivo reordenado (contiene exactamente las reglas originales) */
 /* ====================================================================== */
+
