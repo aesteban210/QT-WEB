@@ -779,7 +779,7 @@ a:hover {
     width: 24px; /* Tamaño del ícono */
     height: 24px; /* Tamaño del ícono */
     /* Ruta del ícono de contacto */
-    background: url('assets/images/general/icon-contact.png') no-repeat center center;
+    background: url('assets/images/general/contact_service.png') no-repeat center center;
     background-size: contain;
 }
 
@@ -807,3 +807,4 @@ a:hover {
 /* ====================================================================== */
 /* Fin del archivo reordenado (contiene exactamente las reglas originales) */
 /* ====================================================================== */
+
