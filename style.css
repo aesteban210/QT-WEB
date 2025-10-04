@@ -744,23 +744,16 @@ a:hover {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive para la página de "Valor Diferencial" */
-@media (max-width: 992px) {
-    .general-grid {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .general-text, .general-images {
-        max-width: 100%;
-    }
-}
 /* Estilos para el nuevo botón flotante de Contacto (horizontal y a la derecha) */
 .contact-btn {
+    /* Nueva propiedad: Permite alinear el ícono y el texto horizontalmente */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+    
     /* Posición fija en la pantalla */
     position: fixed;
     bottom: 70px;  /* Se ubica a 60px del borde inferior */
@@ -768,7 +761,7 @@ a:hover {
     z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
 
     /* Estilos del botón */
-    background: linear-gradient(to right, #ff8c00, #000); /* Degradado de naranja a negro */
+    background: linear-gradient(to right, #ff8c00, #000); /* Mantiene el degradado original */
     color: #fff;
     padding: 15px 25px;
     text-decoration: none;
@@ -780,11 +773,22 @@ a:hover {
     transition: all 0.3s ease;
 }
 
+/* NUEVA REGLA: Estilo para el ícono de contacto */
+.contact-icon {
+    display: block;
+    width: 24px; /* Tamaño del ícono */
+    height: 24px; /* Tamaño del ícono */
+    /* Ruta del ícono de contacto */
+    background: url('assets/images/general/icon-contact.png') no-repeat center center;
+    background-size: contain;
+}
+
 /* Efecto al pasar el cursor (hover) */
 .contact-btn:hover {
     background: linear-gradient(to right, #ffa04d, #222); /* Degradado ligeramente más claro */
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.4);
     transform: scale(1.05); /* Escala ligeramente el botón */
+    text-decoration: none; /* Previene el subrayado al hacer hover */
 }
 
 /* Ajustes responsivos */
@@ -794,18 +798,12 @@ a:hover {
         padding: 12px 20px;
         font-size: 0.9em;
     }
+    /* Reducir el tamaño del ícono en móvil */
+    .contact-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
 /* ====================================================================== */
 /* Fin del archivo reordenado (contiene exactamente las reglas originales) */
 /* ====================================================================== */
-
-
-
-
-
-
-
-
-
-
-
