@@ -1,44 +1,46 @@
-/* ========= style-ordered.css (reordenado, SIN ELIMINAR NADA) ========= */
+/* ======================================================= */
+/* ====== 1. VARIABLES, RESET, Y ESTRUCTURA BASE ========= */
+/* ======================================================= */
 
 /* Variables CSS */
 :root {
-    --primary-color: #007bff; /* Azul brillante */
-    --secondary-color: #0d1a2f; /* Azul oscuro casi negro */
-    --text-color: #333;
-    --light-text-color: #f8f9fa; /* Blanco grisáceo */
-    --gray-background: #f4f7f6; /* Fondo gris claro para secciones */
-    --dark-gray-background: #1a1a2e; /* Fondo oscuro para el header y hero */
-    --font-family: 'Arial', sans-serif;
-    --heading-font-family: 'Helvetica Neue', sans-serif;
+    --primary-color: #007bff; /* Azul brillante */
+    --secondary-color: #0d1a2f; /* Azul oscuro casi negro */
+    --text-color: #333;
+    --light-text-color: #f8f9fa; /* Blanco grisáceo */
+    --gray-background: #f4f7f6; /* Fondo gris claro para secciones */
+    --dark-gray-background: #1a1a2e; /* Fondo oscuro para el header y hero */
+    --font-family: 'Arial', sans-serif;
+    --heading-font-family: 'Helvetica Neue', sans-serif;
 }
 
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Base / Layout */
 body {
-    font-family: var(--font-family);
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--light-text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-text-color);
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Tipografía */
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font-family);
-    color: var(--secondary-color);
-    margin-bottom: 20px;
-    line-height: 1.2;
+    font-family: var(--heading-font-family);
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 h1 { font-size: 3.5em; color: var(--light-text-color); }
@@ -46,766 +48,740 @@ h2 { font-size: 2.5em; }
 h3 { font-size: 1.8em; }
 
 p {
-    margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 a {
-    color: var(--primary-color);
-    text-decoration: none;
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Botones */
 .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: var(--light-text-color);
-    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    border: 2px solid var(--primary-color);
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Usando un color más oscuro */
-    border-color: #0056b3;
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
 
 .btn-secondary {
-    background-color: var(--secondary-color);
-    color: var(--light-text-color);
-    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    border: 2px solid var(--secondary-color);
 }
 
 .btn-secondary:hover {
-    background-color: #040c1a; /* Usando un color más oscuro */
-    border-color: #040c1a;
+    background-color: #040c1a;
+    border-color: #040c1a;
 }
+
+/* ======================================================= */
+/* ====== 2. COMPONENTES REUTILIZABLES =================== */
+/* ======================================================= */
+
+/* Estilos para el botón flotante de Contacto */
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(to right, #ff8c00, #000);
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px 0 0 5px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('assets/images/general/contact_service.png') no-repeat center center;
+    background-size: contain;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(to right, #ffa04d, #222);
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+
+/* ======================================================= */
+/* ====== 3. NAVEGACIÓN Y PIE DE PÁGINA ================== */
+/* ======================================================= */
 
 /* Header */
 .header {
-    background-color: var(--dark-gray-background);
-    color: var(--light-text-color);
-    padding: 20px 0;
-    width: 100%;
+    background-color: var(--dark-gray-background);
+    color: var(--light-text-color);
+    padding: 20px 0;
+    width: 100%;
 }
 
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    color: var(--light-text-color);
+    font-size: 1.8em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: var(--light-text-color);
 }
 
 .logo img {
-    height: 60px;
-    margin-right: 10px;
+    height: 60px;
+    margin-right: 10px;
 }
 
 .nav-menu ul {
-    list-style: none;
-    display: flex;
+    list-style: none;
+    display: flex;
 }
 
 .nav-menu ul li {
-    margin-left: 30px;
+    margin-left: 30px;
 }
 
 .nav-menu ul li a {
-    color: var(--light-text-color);
-    font-weight: bold;
-    padding: 5px 0;
-    position: relative;
-    transition: color 0.3s ease;
+    color: var(--light-text-color);
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 .nav-menu ul li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color);
-    transition: width 0.3s ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
 }
 
 .nav-menu ul li a:hover::after {
-    width: 100%;
+    width: 100%;
 }
 
 .nav-menu ul li a:hover {
-    color: var(--primary-color);
-    text-decoration: none;
+    color: var(--primary-color);
+    text-decoration: none;
 }
+
+/* Footer */
+.footer {
+    background-color: var(--dark-gray-background);
+    color: var(--light-text-color);
+    padding: 60px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.footer-col h3 {
+    color: var(--light-text-color);
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    color: #bbb;
+}
+
+.newsletter-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--light-text-color);
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: var(--light-text-color);
+    margin-bottom: 10px;
+}
+
+.newsletter-form .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.newsletter-form .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.newsletter-form .checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #bbb;
+}
+
+.footer-col.contact-info p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    height: 24px;
+    width: 24px;
+    filter: invert(1);
+}
+
+.legal-links ul {
+    list-style: none;
+}
+
+.legal-links ul li {
+    margin-bottom: 10px;
+}
+
+.legal-links ul li a {
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.legal-links ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* ======================================================= */
+/* ====== 4. SECCIONES DE PÁGINAS (HOME) ================= */
+/* ======================================================= */
 
 /* Hero Section (página principal) */
 .hero-section {
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('assets/images/inicio/cpu_QT.png') no-repeat center center;
-    
-    background-size: cover;
-    background-attachment: fixed; /* Opcional: efecto de paralaje al hacer scroll */
-    color: var(--light-text-color);
-    min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 0;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('assets/images/inicio/cpu_QT.png') no-repeat center center;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--light-text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 800px;
 }
 
 .hero-content h1 {
-    font-size: 4.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: var(--light-text-color);
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--light-text-color);
 }
 
 .hero-content p {
-    font-size: 1.5em;
-    line-height: 1.4;
-    max-width: 500px;
-    margin: 0 auto 30px;
+    font-size: 1.5em;
+    line-height: 1.4;
+    max-width: 500px;
+    margin: 0 auto 30px;
 }
 
-/* About Section, Why Us Section y Services Section*/
+/* About Section, Why Us Section y Services Section (Estructura de dos columnas)*/
 .about-section, .why-us-section, .services-section {
-    background-color: var(--light-text-color);
-    padding: 80px 0;
+    background-color: var(--light-text-color);
+    padding: 80px 0;
 }
 
 .about-section .container, .why-us-section .container, .services-section .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
 }
 
 .about-text-content, .why-us-text-content, .services-text-content {
-    flex: 1;
-    max-width: 40%;
+    flex: 1;
+    max-width: 40%;
 }
 
 .about-text-content h2, .why-us-text-content h2, .services-text-content h2 {
-    font-size: 3em;
-    color: var(--secondary-color);
-    margin-bottom: 30px;
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
 }
 
 .about-description, .why-us-description, .services-description {
-    flex: 2;
-    max-width: 60%;
-    font-size: 1.1em;
-}
-
-/* Blog Section */
-.blog-section {
-    background-color: var(--light-text-color);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.blog-section h2 {
-    color: var(--secondary-color);
-    margin-bottom: 50px;
-}
-
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.blog-post {
-    background-color: var(--light-text-color);
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.blog-post img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.blog-post .author {
-    font-size: 0.9em;
-    color: #666;
-    margin: 15px 15px 5px 15px;
-}
-
-.blog-post h3 {
-    font-size: 1.4em;
-    margin: 0 15px 10px 15px;
-    color: var(--secondary-color);
-}
-
-.blog-post p {
-    font-size: 1em;
-    color: #555;
-    margin: 0 15px 15px 15px;
-}
-
-.blog-post .post-meta {
-    padding: 0 15px 15px 15px;
-    font-size: 0.9em;
-    color: #888;
+    flex: 2;
+    max-width: 60%;
+    font-size: 1.1em;
 }
 
 /* Research Section */
 .research-section {
-    background-color: var(--gray-background);
-    padding: 80px 0;
-    text-align: center;
+    background-color: var(--gray-background);
+    padding: 80px 0;
+    text-align: center;
 }
 
 .research-section h2 {
-    color: var(--secondary-color);
-    margin-bottom: 10px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
 }
 
 .research-section h3 {
-    color: #666;
-    margin-bottom: 50px;
-    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 1.5em;
 }
 
 .research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .research-item {
-    background-color: var(--light-text-color);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: left;
+    background-color: var(--light-text-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
 }
 
 .research-item h4 {
-    font-size: 1.6em;
-    color: var(--secondary-color);
-    margin-bottom: 15px;
+    font-size: 1.6em;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
 }
 
 .research-item p {
-    font-size: 1.1em;
-    color: var(--text-color);
+    font-size: 1.1em;
+    color: var(--text-color);
 }
 
-/* Contact Section */
+/* Blog Section */
+.blog-section {
+    background-color: var(--light-text-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.blog-section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.blog-post {
+    background-color: var(--light-text-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post .author {
+    font-size: 0.9em;
+    color: #666;
+    margin: 15px 15px 5px 15px;
+}
+
+.blog-post h3 {
+    font-size: 1.4em;
+    margin: 0 15px 10px 15px;
+    color: var(--secondary-color);
+}
+
+.blog-post p {
+    font-size: 1em;
+    color: #555;
+    margin: 0 15px 15px 15px;
+}
+
+.blog-post .post-meta {
+    padding: 0 15px 15px 15px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Contact Section (Home) */
 .contact-section {
-    background-color: var(--light-text-color);
-    padding: 80px 0;
+    background-color: var(--light-text-color);
+    padding: 80px 0;
 }
 
 .contact-section .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
 }
 
 .contact-form-container {
-    flex: 1;
-    max-width: 50%;
+    flex: 1;
+    max-width: 50%;
 }
 
 .contact-form-container h2 {
-    font-size: 3em;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
 .contact-form-container p {
-    margin-bottom: 30px;
-    font-size: 1.1em;
+    margin-bottom: 30px;
+    font-size: 1.1em;
 }
 
 .contact-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: var(--text-color);
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-color);
 }
 
 .contact-form label .required {
-    color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
 }
 
 .contact-form textarea {
-    min-height: 120px;
-    resize: vertical;
+    min-height: 120px;
+    resize: vertical;
 }
 
 .contact-form button {
-    width: auto;
-    padding: 12px 30px;
-    cursor: pointer;
+    width: auto;
+    padding: 12px 30px;
+    cursor: pointer;
 }
 
 .contact-image {
-    flex: 1;
-    max-width: 50%;
-    text-align: right;
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
 }
 
 .contact-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Footer */
-.footer {
-    background-color: var(--dark-gray-background);
-    color: var(--light-text-color);
-    padding: 60px 0;
+/* ======================================================= */
+/* ====== 5. ESTILOS DE PÁGINAS INTERNAS ================= */
+/* ======================================================= */
+
+/* Estilos comunes para las Hero Sections de páginas internas */
+.services-hero-section, .about-hero-section, .general-hero-section {
+    background-size: cover;
+    color: var(--light-text-color);
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.footer-col h3 {
-    color: var(--light-text-color);
-    margin-bottom: 20px;
-}
-
-.footer-col p {
-    font-size: 0.95em;
-    margin-bottom: 15px;
-    color: #bbb;
-}
-
-.newsletter-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: var(--light-text-color);
-}
-
-.newsletter-form input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #555;
-    border-radius: 5px;
-    background-color: #333;
-    color: var(--light-text-color);
-    margin-bottom: 10px;
-}
-
-.newsletter-form .checkbox-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.newsletter-form .checkbox-group input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.newsletter-form .checkbox-group label {
-    margin-bottom: 0;
-    font-weight: normal;
-    color: #bbb;
-}
-
-.footer-col.contact-info p {
-    margin-bottom: 10px;
-}
-
-.social-icons {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons img {
-    height: 24px;
-    width: 24px;
-    filter: invert(1);
-}
-
-.legal-links ul {
-    list-style: none;
-}
-
-.legal-links ul li {
-    margin-bottom: 10px;
-}
-
-.legal-links ul li a {
-    color: #bbb;
-    font-size: 0.9em;
-}
-
-.legal-links ul li a:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-    .nav-menu {
-        display: none;
-    }
-    .nav-bar .btn-primary {
-        display: none;
-    }
-    .hero-content h1 {
-        font-size: 3em;
-    }
-    .hero-content p {
-        font-size: 1.2em;
-    }
-    .about-section .container, .why-us-section .container, .services-section .container, .contact-section .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .about-text-content, .why-us-text-content, .services-text-content, .about-description, .why-us-description, .services-description, .contact-form-container, .contact-image {
-        max-width: 100%;
-        text-align: center;
-    }
-    .about-text-content h2, .why-us-text-content h2, .services-text-content h2, .contact-form-container h2 {
-        font-size: 2.5em;
-    }
-    .footer-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .social-icons {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-content {
-        margin-left: 0;
-        text-align: center;
-    }
-    .hero-content h1 {
-        font-size: 2.5em;
-    }
-    .hero-content p {
-        font-size: 1em;
-    }
-    .services-grid, .blog-grid, .research-grid {
-        grid-template-columns: 1fr;
-    }
-    .logo {
-        font-size: 1.5em;
-    }
+.services-hero-section h1, .about-hero-section h1, .general-hero-section h1 {
+    font-size: 3.5em;
+    color: var(--light-text-color);
 }
 
 /* Estilos para la página de servicios */
 .services-hero-section {
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('assets/images/services/cybersecurity-24.jpeg') no-repeat center center;
-    background-size: cover;
-    color: var(--light-text-color);
-    min-height: 70vh; /* Un poco más pequeña que la principal */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 60px; /* Para que el contenido no quede detrás del header */
-}
-
-.services-hero-section h1 {
-    font-size: 3.5em;
-    color: var(--light-text-color);
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('assets/images/services/cybersecurity-24.jpeg') no-repeat center center;
 }
 
 .services-hero-section p {
-    font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 .services-detailed-section {
-    padding: 80px 0;
-    background-color: var(--light-text-color);
-    text-align: center;
+    padding: 80px 0;
+    background-color: var(--light-text-color);
+    text-align: center;
 }
 
 .services-detailed-section h2 {
-    color: var(--secondary-color);
-    margin-bottom: 50px;
+    color: var(--secondary-color);
+    margin-bottom: 50px;
 }
 
 .services-grid-detailed {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .service-item-detailed {
-    background-color: var(--gray-background);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: left;
+    background-color: var(--gray-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
 }
 
 .service-item-detailed img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .service-item-detailed h3 {
-    font-size: 1.5em;
-    color: var(--secondary-color);
+    font-size: 1.5em;
+    color: var(--secondary-color);
 }
 
 .service-item-detailed p {
-    font-size: 1em;
-    color: var(--text-color);
-}
-
-/* Ajustes para dispositivos móviles (servicios) */
-@media (max-width: 768px) {
-    .services-hero-section h1 {
-        font-size: 2.5em;
-    }
+    font-size: 1em;
+    color: var(--text-color);
 }
 
 /* Estilos para la página de "Quiénes Somos" */
 .about-hero-section {
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('assets/images/about/image_b5ba52.jpg') no-repeat center center;
-    background-size: cover;
-    color: var(--light-text-color);
-    min-height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 60px;
-}
-
-.about-hero-section h1 {
-    font-size: 3.5em;
-    color: var(--light-text-color);
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('assets/images/about/image_b5ba52.jpg') no-repeat center center;
 }
 
 .about-content-section {
-    padding: 80px 0;
-    background-color: var(--light-text-color);
+    padding: 80px 0;
+    background-color: var(--light-text-color);
 }
 
 .about-grid {
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
 }
 
 .about-image {
-    flex: 1;
-    max-width: 50%;
+    flex: 1;
+    max-width: 50%;
 }
 
 .about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .about-text {
-    flex: 1;
-    max-width: 50%;
+    flex: 1;
+    max-width: 50%;
 }
 
 .about-text h2 {
-    font-size: 2.5em;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
 .about-text p {
-    font-size: 1.1em;
-    color: var(--text-color);
-}
-
-/* Responsive para la página de "Quiénes Somos" */
-@media (max-width: 992px) {
-    .about-grid {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about-image, .about-text {
-        max-width: 100%;
-    }
+    font-size: 1.1em;
+    color: var(--text-color);
 }
 
 /* Estilos para la página de "Valor Diferencial" */
 .general-hero-section {
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('https://via.placeholder.com/1920x800?text=Valor+Diferencial') no-repeat center center;
-    background-size: cover;
-    color: var(--light-text-color);
-    min-height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 60px;
-}
-
-.general-hero-section h1 {
-    font-size: 3.5em;
-    color: var(--light-text-color);
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://via.placeholder.com/1920x800?text=Valor+Diferencial') no-repeat center center;
 }
 
 .general-content-section {
-    padding: 80px 0;
-    background-color: var(--gray-background);
+    padding: 80px 0;
+    background-color: var(--gray-background);
 }
 
 .general-grid {
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
 }
 
 .general-text {
-    flex: 1;
-    max-width: 50%;
+    flex: 1;
+    max-width: 50%;
 }
 
 .general-text h2 {
-    font-size: 2.5em;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
 .general-text p {
-    font-size: 1.1em;
-    color: var(--text-color);
+    font-size: 1.1em;
+    color: var(--text-color);
 }
 
 .general-images {
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .general-images img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para el nuevo botón flotante de Contacto (horizontal y a la derecha) */
-.contact-btn {
-    /* Nueva propiedad: Permite alinear el ícono y el texto horizontalmente */
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espacio entre el ícono y el texto */
-    
-    /* Posición fija en la pantalla */
-    position: fixed;
-    bottom: 70px;  /* Se ubica a 60px del borde inferior */
-    right: 0;      /* Lo coloca en el borde derecho */
-    z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
+/* ======================================================= */
+/* ====== 6. DISEÑO RESPONSIVO =========================== */
+/* ======================================================= */
 
-    /* Estilos del botón */
-    background: linear-gradient(to right, #ff8c00, #000); /* Mantiene el degradado original */
-    color: #fff;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
-    border-radius: 5px 0 0 5px; /* Bordes redondeados solo en el lado izquierdo */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: all 0.3s ease;
+/* Responsive Design (General) */
+@media (max-width: 992px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav-bar .btn-primary {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 3em;
+    }
+    .hero-content p {
+        font-size: 1.2em;
+    }
+    /* Reagrupación de contenedores de 2 columnas */
+    .about-section .container, .why-us-section .container, .services-section .container, .contact-section .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /* Reagrupación de contenido de 2 columnas */
+    .about-text-content, .why-us-text-content, .services-text-content, .about-description, .why-us-description, .services-description, .contact-form-container, .contact-image, .about-image, .about-text, .general-text, .general-images {
+        max-width: 100%;
+        text-align: center;
+    }
+    .about-text-content h2, .why-us-text-content h2, .services-text-content h2, .contact-form-container h2 {
+        font-size: 2.5em;
+    }
+    /* Reagrupación de grids de páginas internas */
+    .about-grid, .general-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
 }
 
-/* NUEVA REGLA: Estilo para el ícono de contacto */
-.contact-icon {
-    display: block;
-    width: 24px; /* Tamaño del ícono */
-    height: 24px; /* Tamaño del ícono */
-    /* Ruta del ícono de contacto */
-    background: url('assets/images/general/contact_service.png') no-repeat center center;
-    background-size: contain;
-}
-
-/* Efecto al pasar el cursor (hover) */
-.contact-btn:hover {
-    background: linear-gradient(to right, #ffa04d, #222); /* Degradado ligeramente más claro */
-    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.4);
-    transform: scale(1.05); /* Escala ligeramente el botón */
-    text-decoration: none; /* Previene el subrayado al hacer hover */
-}
-
-/* Ajustes responsivos */
 @media (max-width: 768px) {
-    .contact-btn {
-        bottom: 20px;
-        padding: 12px 20px;
-        font-size: 0.9em;
-    }
-    /* Reducir el tamaño del ícono en móvil */
-    .contact-icon {
-        width: 20px;
-        height: 20px;
-    }
+    .hero-content {
+        margin-left: 0;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .services-grid-detailed, .blog-grid, .research-grid { /* Ajustado de services-grid a services-grid-detailed */
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        font-size: 1.5em;
+    }
+    /* Ajustes responsivos para héroes de páginas internas */
+    .services-hero-section h1, .about-hero-section h1, .general-hero-section h1 {
+        font-size: 2.5em;
+    }
+    /* Ajustes responsivos para el botón de contacto */
+    .contact-btn {
+        bottom: 20px;
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+    .contact-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
-/* ====================================================================== */
-/* Fin del archivo reordenado (contiene exactamente las reglas originales) */
-/* ====================================================================== */
-
-
