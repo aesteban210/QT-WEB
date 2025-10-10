@@ -1,1 +1,14 @@
+/* ======================================================= */
+/* ====== VARIABLES GLOBALES CSS ========================= */
+/* ======================================================= */
 
+:root {
+    --primary-color: #007bff; /* Azul brillante */
+    --secondary-color: #0d1a2f; /* Azul oscuro casi negro */
+    --text-color: #333;
+    --light-text-color: #f8f9fa; /* Blanco grisáceo */
+    --gray-background: #f4f7f6; /* Fondo gris claro para secciones */
+    --dark-gray-background: #1a1a2e; /* Fondo oscuro para el header y hero */
+    --font-family: 'Arial', sans-serif;
+    --heading-font-family: 'Helvetica Neue', sans-serif;
+}
