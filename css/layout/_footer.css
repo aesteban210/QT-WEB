@@ -1,1 +1,101 @@
+/* ======================================================= */
+/* ====== PIE DE PÁGINA (FOOTER) ========================= */
+/* ======================================================= */
 
+.footer {
+    /* Estas variables provienen de _variables.css */
+    background-color: var(--dark-gray-background);
+    color: var(--light-text-color);
+    padding: 60px 0;
+}
+
+.footer-grid {
+    display: grid;
+    /* Divide el footer en tres columnas de igual tamaño */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.footer-col h3 {
+    /* Estas variables provienen de _variables.css */
+    color: var(--light-text-color);
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    color: #bbb; /* Color gris claro para párrafos */
+}
+
+/* Formulario de Newsletter */
+.newsletter-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--light-text-color);
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: var(--light-text-color);
+    margin-bottom: 10px;
+}
+
+.newsletter-form .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.newsletter-form .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.newsletter-form .checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #bbb;
+}
+
+/* Información de Contacto */
+.footer-col.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Iconos Sociales */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    height: 24px;
+    width: 24px;
+    /* Invierte los colores de los iconos para que sean blancos sobre fondo oscuro */
+    filter: invert(1);
+}
+
+/* Enlaces Legales */
+.legal-links ul {
+    list-style: none;
+}
+
+.legal-links ul li {
+    margin-bottom: 10px;
+}
+
+.legal-links ul li a {
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.legal-links ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
