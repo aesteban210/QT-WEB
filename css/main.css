@@ -9,7 +9,7 @@
 
 /* SECCIONES Y PÁGINAS (CONTENIDO) */
 @import url('sections/_home.css');
-@import url('sections/_contact.css');
+@import url('pages/_contact.css');
 @import url('pages/_about.css');
 @import url('pages/_general.css');
 @import url('pages/_services.css');
