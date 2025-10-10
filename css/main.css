@@ -1,1 +1,19 @@
+/* Base y Layout */
+@import url('base/_variables.css');
+@import url('base/_layout.css');
 
+/* Componentes */
+@import url('components/_buttons.css');
+
+/* Estructura (Header/Footer) */
+@import url('layout/_header.css');
+@import url('layout/_footer.css');
+
+/* Secciones y Páginas */
+@import url('sections/_home.css');
+@import url('pages/_services.css');
+@import url('pages/_about.css');
+@import url('pages/_general.css');
+
+/* Responsive debe ir al final para sobrescribir */
+@import url('util/_responsive.css');
