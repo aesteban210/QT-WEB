@@ -3,16 +3,16 @@
 @import url('../../base/_layout.css');
 
 /* COMPONENTES y LAYOUT PRINCIPAL */
-@import url('../../components/_buttons.css');
-@import url('../../layout/_header.css');
-@import url('../../layout/_footer.css');
+@import url('components/_buttons.css');
+@import url('layout/_header.css');
+@import url('layout/_footer.css');
 
 /* SECCIONES Y PÁGINAS (CONTENIDO) */
-@import url('../../sections/_home.css');
-@import url('../../pages/_contact.css');
-@import url('../../pages/_about.css');
-@import url('../../pages/_general.css');
-@import url('../../pages/_services.css');
+@import url('sections/_home.css');
+@import url('pages/_contact.css');
+@import url('pages/_about.css');
+@import url('pages/_general.css');
+@import url('pages/_services.css');
 
 /* UTILIDADES (Este archivo ya está aquí, no necesita ruta) */
 @import url('_responsive.css'); /* <-- Si _responsive.css también está en util/ */
