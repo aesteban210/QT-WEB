@@ -1,1 +1,79 @@
+/* ======================================================= */
+/* ====== BOTONES Y COMPONENTES REUTILIZABLES ============ */
+/* ======================================================= */
 
+/* Botones Base */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo Primario */
+.btn-primary {
+    /* Estas variables provienen de _variables.css */
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Estilo Secundario */
+.btn-secondary {
+    /* Estas variables provienen de _variables.css */
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: #040c1a;
+    border-color: #040c1a;
+}
+
+/* ======================================================= */
+/* ====== Botón Flotante de Contacto (.contact-btn) ====== */
+/* ======================================================= */
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(to right, #ff8c00, #000);
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px 0 0 5px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    /* Asegúrese de que la ruta 'assets/images/general/contact_service.png' sea correcta */
+    background: url('assets/images/general/contact_service.png') no-repeat center center;
+    background-size: contain;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(to right, #ffa04d, #222);
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    text-decoration: none;
+}
