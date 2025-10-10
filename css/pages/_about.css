@@ -1,1 +1,56 @@
+/* ======================================================= */
+/* ====== ESTILOS DE LA PÁGINA: QUIÉNES SOMOS (ABOUT) ==== */
+/* ======================================================= */
 
+/* Hero Section: Quiénes Somos */
+/* NOTA: Las propiedades de estructura (min-height, display, color, etc.)
+   deben estar en una regla general en sections/_home.css o _general.css
+   si aún no las ha movido, o directamente en el HTML con una clase base.
+   Aquí solo definimos lo específico de esta página. */
+.about-hero-section {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('assets/images/about/image_b5ba52.jpg') no-repeat center center;
+    background-size: cover;
+    /* La regla h1: font-size: 3.5em; color: var(--light-text-color); está en _layout.css */
+}
+
+/* Sección de Contenido Principal */
+.about-content-section {
+    padding: 80px 0;
+    background-color: var(--light-text-color);
+}
+
+.about-grid {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: var(--text-color);
+}
