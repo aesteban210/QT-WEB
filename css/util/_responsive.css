@@ -1,1 +1,53 @@
+/* Responsive Design */
+@media (max-width: 992px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav-bar .btn-primary {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 3em;
+    }
+    .hero-content p {
+        font-size: 1.2em;
+    }
+    .about-section .container, .why-us-section .container, .services-section .container, .contact-section .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-text-content, .why-us-text-content, .services-text-content, .about-description, .why-us-description, .services-description, .contact-form-container, .contact-image {
+        max-width: 100%;
+        text-align: center;
+    }
+    .about-text-content h2, .why-us-text-content h2, .services-text-content h2, .contact-form-container h2 {
+        font-size: 2.5em;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+}
 
+@media (max-width: 768px) {
+    .hero-content {
+        margin-left: 0;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .services-grid, .blog-grid, .research-grid {
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        font-size: 1.5em;
+    }
+}
