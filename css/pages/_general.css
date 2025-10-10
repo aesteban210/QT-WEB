@@ -1,1 +1,60 @@
+/* ======================================================= */
+/* ====== ESTILOS DE LA PÁGINA: VALOR DIFERENCIAL (GENERAL) */
+/* ======================================================= */
 
+/* Hero Section: Valor Diferencial */
+/* NOTA: Asumiendo que la regla de estructura del hero se maneja globalmente,
+   aquí solo definimos la imagen de fondo específica. */
+.general-hero-section {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        /* Esta URL es la que estaba en su CSS original */
+        url('https://via.placeholder.com/1920x800?text=Valor+Diferencial') no-repeat center center;
+    background-size: cover;
+}
+
+/* Sección de Contenido Principal (Texto y Imágenes) */
+.general-content-section {
+    padding: 80px 0;
+    /* Usa el fondo gris claro para diferenciar del blanco */
+    background-color: var(--gray-background);
+}
+
+.general-grid {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px; /* Espacio entre el texto y las imágenes */
+}
+
+/* Columna de Texto */
+.general-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.general-text h2 {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.general-text p {
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+/* Columna de Imágenes */
+.general-images {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las imágenes verticales */
+}
+
+.general-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
