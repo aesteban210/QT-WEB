@@ -1,1 +1,52 @@
+/* ======================================================= */
+/* ====== RESET BÁSICO Y ESTRUCTURA GENERAL ============== */
+/* ======================================================= */
 
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base / Layout */
+body {
+    /* Estas variables provienen de _variables.css, que ya debe estar importado en main.css */
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Tipografía Base */
+h1, h2, h3, h4, h5, h6 {
+    /* Estas variables provienen de _variables.css */
+    font-family: var(--heading-font-family);
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Tamaños de Encabezados Específicos */
+h1 { font-size: 3.5em; color: var(--light-text-color); }
+h2 { font-size: 2.5em; }
+h3 { font-size: 1.8em; }
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
