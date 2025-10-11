@@ -11,8 +11,8 @@
     background-size: cover;
     color: var(--light-text-color);
     
-    /* CORRECCIÓN CRÍTICA DEL ESPACIO EXTRA (Margen Superior) */
-    margin-top: 0; 
+    /* CORRECCIÓN CRÍTICA: Anular cualquier margen superior o inferior */
+    margin: 0 !important;
     
     /* Estilos de centrado y espaciado */
     display: flex;
