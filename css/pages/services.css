@@ -6,22 +6,20 @@
 .services-hero-section {
     background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        /* CORRECCIÓN DE RUTA: Ruta absoluta necesaria para GitHub Pages */
         url('/QT-WEB/assets/images/services/cybersecurity-24.jpeg') no-repeat center center;
     background-size: cover;
     color: var(--light-text-color);
     
-    /* 🔥 CORRECCIÓN DEFINITIVA 🔥: Anula cualquier margen externo con alta especificidad */
-    margin: 0 !important;
+    /* Limpieza: Asegura que no haya márgenes. */
+    margin: 0;
     
-    /* Estilos de centrado y espaciado */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     
-    /* Usamos PADDING para controlar la altura de forma flexible y centrada */
-    padding: 120px 0; /* Un buen padding superior e inferior */
+    /* El padding reemplaza al min-height y al padding-top forzado */
+    padding: 120px 0; 
 }
 
 /* El h1 de la página de servicios se define aquí */
