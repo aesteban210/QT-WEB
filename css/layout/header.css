@@ -9,9 +9,8 @@
     color: var(--light-text-color);
     padding: 20px 0;
     width: 100%;
-    
-    /* 🔥 CORRECCIÓN DEFINITIVA 🔥: Anula cualquier margen externo con alta especificidad */
-    margin: 0 !important; 
+    /* Limpieza: Se elimina !important y se asegura margin: 0 */
+    margin: 0; 
 }
 
 /* Barra de Navegación */
