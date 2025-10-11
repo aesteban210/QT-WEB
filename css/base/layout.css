@@ -17,7 +17,7 @@ body {
     color: var(--text-color);
     background-color: var(--light-text-color);
     
-    /* 🔥 CORRECCIÓN CRÍTICA 🔥: Anula el margen por defecto del navegador/Jekyll */
+    /* 🔥 RESET LIMPIO: Asegura que el body no tenga márgenes predeterminados. */
     margin: 0; 
     padding: 0;
 }
