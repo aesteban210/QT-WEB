@@ -16,6 +16,10 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--light-text-color);
+    
+    /* 🔥 CORRECCIÓN CRÍTICA 🔥: Anula el margen por defecto del navegador/Jekyll */
+    margin: 0; 
+    padding: 0;
 }
 
 .container {
