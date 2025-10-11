@@ -3,14 +3,29 @@
 /* ======================================================= */
 
 /* Hero Section de Servicios */
-/* NOTA: Asumiendo que las reglas de estructura de hero ya están movidas,
-   aquí definimos el fondo específico para esta página. */
 .services-hero-section {
     background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('../../assets/images/services/cybersecurity-24.jpeg') no-repeat center center;
+        /* CORRECCIÓN DE RUTA: Ruta absoluta necesaria para GitHub Pages */
+        url('/QT-WEB/assets/images/services/cybersecurity-24.jpeg') no-repeat center center;
     background-size: cover;
-    /* La regla h1 específica está en _responsive.css para móvil */
+    color: var(--light-text-color);
+    
+    /* CORRECCIÓN CRÍTICA DEL ESPACIO EXTRA: 
+       Se ELIMINA el min-height: 70vh que causaba el problema visual. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* Usamos PADDING para controlar la altura de forma flexible y centrada */
+    padding: 120px 0; /* Un buen padding superior e inferior */
+}
+
+/* El h1 de la página de servicios se define aquí */
+.services-hero-section h1 {
+    font-size: 3.5em;
+    color: var(--light-text-color);
 }
 
 .services-hero-section p {
@@ -32,13 +47,11 @@
 /* Grid de Servicios */
 .services-grid-detailed {
     display: grid;
-    /* Adapta las columnas automáticamente, mínimo 300px */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
 .service-item-detailed {
-    /* Usa el fondo gris claro para diferenciar los items */
     background-color: var(--gray-background); 
     padding: 20px;
     border-radius: 8px;
@@ -62,4 +75,11 @@
 .service-item-detailed p {
     font-size: 1em;
     color: var(--text-color);
+}
+
+/* Ajustes responsivos para servicios */
+@media (max-width: 768px) {
+    .services-hero-section h1 {
+        font-size: 2.5em;
+    }
 }
