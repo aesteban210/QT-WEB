@@ -14,7 +14,7 @@
 @import url('pages/_contact.css'); 
 @import url('pages/_about.css');
 @import url('pages/_general.css');
-@import url('/pages/_services.css');
+@import url('https://aesteban210.github.io/QT-WEB/css/pages/_services.css');
 
 /* UTILIDADES */
 @import url('util/_responsive.css');
