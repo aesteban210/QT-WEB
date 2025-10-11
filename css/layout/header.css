@@ -9,6 +9,9 @@
     color: var(--light-text-color);
     padding: 20px 0;
     width: 100%;
+    
+    /* CORRECCIÓN: Asegura que el header no tenga ningún margen que lo separe */
+    margin: 0; 
 }
 
 /* Barra de Navegación */
@@ -55,18 +58,19 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px;
-    width: 0;
+    bottom: 0;
+    width: 100%;
     height: 2px;
     background-color: var(--primary-color);
-    transition: width 0.3s ease;
+    transform: scaleX(0); /* Inicialmente escondido */
+    transition: transform 0.3s ease;
 }
 
 .nav-menu ul li a:hover::after {
-    width: 100%;
+    transform: scaleX(1); /* Muestra al pasar el cursor */
 }
 
-.nav-menu ul li a:hover {
+/* Estado activo del enlace */
+.nav-menu ul li a.active {
     color: var(--primary-color);
-    text-decoration: none;
 }
