@@ -10,8 +10,8 @@
     padding: 20px 0;
     width: 100%;
     
-    /* CORRECCIÓN: Asegura que el header no tenga ningún margen que lo separe */
-    margin: 0; 
+    /* CORRECCIÓN CRÍTICA: Anula cualquier margen externo que lo empuje */
+    margin: 0 !important; 
 }
 
 /* Barra de Navegación */
