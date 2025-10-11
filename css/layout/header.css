@@ -10,7 +10,7 @@
     padding: 20px 0;
     width: 100%;
     
-    /* CORRECCIÓN CRÍTICA: Anula cualquier margen externo que lo empuje */
+    /* 🔥 CORRECCIÓN DEFINITIVA 🔥: Anula cualquier margen externo con alta especificidad */
     margin: 0 !important; 
 }
 
@@ -58,19 +58,18 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0;
-    width: 100%;
+    bottom: -5px;
+    width: 0;
     height: 2px;
     background-color: var(--primary-color);
-    transform: scaleX(0); /* Inicialmente escondido */
-    transition: transform 0.3s ease;
+    transition: width 0.3s ease;
 }
 
 .nav-menu ul li a:hover::after {
-    transform: scaleX(1); /* Muestra al pasar el cursor */
+    width: 100%;
 }
 
-/* Estado activo del enlace */
-.nav-menu ul li a.active {
+.nav-menu ul li a:hover {
     color: var(--primary-color);
+    text-decoration: none;
 }
