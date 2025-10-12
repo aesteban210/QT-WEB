@@ -28,39 +28,9 @@
     color: #bbb; /* Color gris claro para párrafos */
 }
 
-/* Formulario de Newsletter */
-.newsletter-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: var(--light-text-color);
-}
-
-.newsletter-form input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #555;
-    border-radius: 5px;
-    background-color: #333;
-    color: var(--light-text-color);
-    margin-bottom: 10px;
-}
-
-.newsletter-form .checkbox-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.newsletter-form .checkbox-group input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.newsletter-form .checkbox-group label {
-    margin-bottom: 0;
-    font-weight: normal;
-    color: #bbb;
-}
+/* El bloque de estilos para el Formulario de Newsletter
+   HA SIDO ELIMINADO para optimizar el CSS.
+*/
 
 /* Información de Contacto */
 .footer-col.contact-info p {
