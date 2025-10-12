@@ -4,71 +4,82 @@
 
 /* Header Contenedor Principal */
 .header {
-    /* Estas variables provienen de _variables.css */
-    background-color: var(--dark-gray-background);
-    color: var(--light-text-color);
-    padding: 20px 0;
-    width: 100%;
-    /* Limpieza: Se elimina !important y se asegura margin: 0 */
-    margin: 0; 
+	/* Estas variables provienen de _variables.css */
+	background-color: var(--dark-gray-background);
+	color: var(--light-text-color);
+	padding: 20px 0;
+	width: 100%;
+	/* Limpieza: Se elimina !important y se asegura margin: 0 */
+	margin: 0; 
 }
 
 /* Barra de Navegación */
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-/* Logo */
+/* Logo (ESTILOS MODIFICADOS PARA EL ENLACE <a>) */
 .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    color: var(--light-text-color);
+	font-size: 1.8em;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	
+	/* PROPIEDADES CLAVE PARA MANTENER LA APARIENCIA: */
+	color: var(--light-text-color); /* Anula el color de enlace por defecto. */
+	text-decoration: none; /* Elimina el subrayado. */
+	cursor: pointer; /* Mantiene el cursor de puntero. */
 }
 
 .logo img {
-    height: 60px;
-    margin-right: 10px;
+	height: 60px;
+	margin-right: 10px;
+}
+
+/* Evita que el enlace del logo cambie de estilo al pasar el ratón */
+.logo:hover {
+	color: var(--light-text-color); /* Mantiene el color. */
+	text-decoration: none; /* Asegura que no se subraye. */
+	opacity: 0.9; /* Efecto sutil para indicar interacción. */
 }
 
 /* Menú de Navegación */
 .nav-menu ul {
-    list-style: none;
-    display: flex;
+	list-style: none;
+	display: flex;
 }
 
 .nav-menu ul li {
-    margin-left: 30px;
+	margin-left: 30px;
 }
 
 .nav-menu ul li a {
-    color: var(--light-text-color);
-    font-weight: bold;
-    padding: 5px 0;
-    position: relative;
-    transition: color 0.3s ease;
+	color: var(--light-text-color);
+	font-weight: bold;
+	padding: 5px 0;
+	position: relative;
+	transition: color 0.3s ease;
 }
 
 /* Efecto de Subrayado Animado (::after) */
 .nav-menu ul li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color);
-    transition: width 0.3s ease;
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 0;
+	height: 2px;
+	background-color: var(--primary-color);
+	transition: width 0.3s ease;
 }
 
 .nav-menu ul li a:hover::after {
-    width: 100%;
+	width: 100%;
 }
 
 .nav-menu ul li a:hover {
-    color: var(--primary-color);
-    text-decoration: none;
+	color: var(--primary-color);
+	text-decoration: none;
 }
