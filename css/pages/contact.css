@@ -2,86 +2,77 @@
 /* ====== SECCIÓN DE CONTACTO ============================ */
 /* ======================================================= */
 
+/* Contact Section */
 .contact-section {
-	padding: 80px 0;
-	/* Usamos el color de fondo gris claro para la separación de secciones */
-	background-color: var(--gray-background);
+    background-color: var(--light-text-color);
+    padding: 80px 0;
 }
 
 .contact-section .container {
-	display: flex;
-	justify-content: space-between;
-	gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
 }
 
-/* Contenedor del Formulario */
 .contact-form-container {
-	flex: 1; /* Ocupa el espacio disponible */
-	max-width: 50%;
-	padding: 30px;
-	background-color: var(--light-text-color); /* Fondo blanco para destacar el formulario */
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 50%;
 }
 
 .contact-form-container h2 {
-	color: var(--secondary-color);
-	margin-bottom: 25px;
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
-/* Estilos de los campos del formulario */
-.form-group {
-	margin-bottom: 20px;
+.contact-form-container p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
 }
 
-.form-group label {
-	display: block;
-	margin-bottom: 8px;
-	font-weight: bold;
-	color: var(--text-color);
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-color);
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	font-size: 1em;
-	transition: border-color 0.3s ease;
+.contact-form label .required {
+    color: var(--primary-color);
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-	border-color: var(--primary-color);
-	outline: none;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
 }
 
-.form-group textarea {
-	resize: vertical;
-	min-height: 150px;
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 
-/* Imagen de Contacto (o Información adicional) */
+.contact-form button {
+    width: auto;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
 .contact-image {
-	flex: 1;
-	max-width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
 }
 
 .contact-image img {
-	width: 100%;
-	height: auto;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Botón de Enviar (usa los estilos definidos en _buttons.css) */
-.contact-form-container .btn-primary {
-	width: 100%;
-	padding: 15px;
-	font-size: 1.1em;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
