@@ -4,75 +4,75 @@
 
 /* Contact Section */
 .contact-section {
-    background-color: var(--light-text-color);
-    padding: 80px 0;
+	background-color: var(--light-text-color);
+	padding: 80px 0;
 }
 
 .contact-section .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 50px;
 }
 
 .contact-form-container {
-    flex: 1;
-    max-width: 50%;
+	flex: 1;
+	max-width: 50%;
 }
 
 .contact-form-container h2 {
-    font-size: 3em;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
+	font-size: 3em;
+	color: var(--secondary-color);
+	margin-bottom: 20px;
 }
 
 .contact-form-container p {
-    margin-bottom: 30px;
-    font-size: 1.1em;
+	margin-bottom: 30px;
+	font-size: 1.1em;
 }
 
 .contact-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: var(--text-color);
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+	color: var(--text-color);
 }
 
 .contact-form label .required {
-    color: var(--primary-color);
+	color: var(--primary-color);
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1em;
 }
 
 .contact-form textarea {
-    min-height: 120px;
-    resize: vertical;
+	min-height: 120px;
+	resize: vertical;
 }
 
 .contact-form button {
-    width: auto;
-    padding: 12px 30px;
-    cursor: pointer;
+	width: auto;
+	padding: 12px 30px;
+	cursor: pointer;
 }
 
 .contact-image {
-    flex: 1;
-    max-width: 50%;
-    text-align: right;
+	flex: 1;
+	max-width: 50%;
+	text-align: right;
 }
 
 .contact-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
