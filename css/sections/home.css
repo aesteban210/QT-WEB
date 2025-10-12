@@ -1,176 +1,168 @@
 /* ======================================================= */
-/* ====== 4. SECCIONES DE LA PÁGINA PRINCIPAL (HOME) ===== */
+/* ====== ESTILOS ESPECÍFICOS DE LA PÁGINA: INICIO ======= */
 /* ======================================================= */
 
 /* Hero Section (página principal) */
 .hero-section {
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('assets/images/inicio/cpu_QT.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed; /* Efecto Parallax */
-    color: var(--light-text-color);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 0;
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('assets/images/inicio/cpu_QT.png') no-repeat center center;
+	
+	background-size: cover;
+	background-attachment: fixed; /* Opcional: efecto de paralaje al hacer scroll */
+	color: var(--light-text-color);
+	min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 0;
 }
 
 .hero-content {
-    max-width: 800px;
+	max-width: 800px;
 }
 
 .hero-content h1 {
-    font-size: 4.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: var(--light-text-color); /* Sobrescribe la regla de h1 en _layout.css */
+	font-size: 4.5em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: var(--light-text-color);
 }
 
 .hero-content p {
-    font-size: 1.5em;
-    line-height: 1.4;
-    max-width: 500px;
-    margin: 0 auto 30px;
+	font-size: 1.5em;
+	line-height: 1.4;
+	max-width: 500px;
+	margin: 0 auto 30px;
 }
 
-/* ======================================================= */
-/* Estructura de Dos Columnas (About, Why Us, Services de Home) */
-/* ======================================================= */
-
+/* About Section, Why Us Section y Services Section (Contenido de Portada) */
 .about-section, .why-us-section, .services-section {
-    background-color: var(--light-text-color);
-    padding: 80px 0;
+	background-color: var(--light-text-color);
+	padding: 80px 0;
 }
 
 .about-section .container, .why-us-section .container, .services-section .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 50px;
 }
 
 .about-text-content, .why-us-text-content, .services-text-content {
-    flex: 1;
-    max-width: 40%;
+	flex: 1;
+	max-width: 40%;
 }
 
 .about-text-content h2, .why-us-text-content h2, .services-text-content h2 {
-    font-size: 3em;
-    color: var(--secondary-color);
-    margin-bottom: 30px;
+	font-size: 3em;
+	color: var(--secondary-color);
+	margin-bottom: 30px;
 }
 
 .about-description, .why-us-description, .services-description {
-    flex: 2;
-    max-width: 60%;
-    font-size: 1.1em;
+	flex: 2;
+	max-width: 60%;
+	font-size: 1.1em;
 }
 
-/* ======================================================= */
-/* Research Section */
-/* ======================================================= */
-
-.research-section {
-    background-color: var(--gray-background);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.research-section h2 {
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-}
-
-.research-section h3 {
-    color: #666;
-    margin-bottom: 50px;
-    font-size: 1.5em;
-}
-
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.research-item {
-    background-color: var(--light-text-color);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: left;
-}
-
-.research-item h4 {
-    font-size: 1.6em;
-    color: var(--secondary-color);
-    margin-bottom: 15px;
-}
-
-.research-item p {
-    font-size: 1.1em;
-    color: var(--text-color);
-}
-
-/* ======================================================= */
 /* Blog Section */
-/* ======================================================= */
-
 .blog-section {
-    background-color: var(--light-text-color);
-    padding: 80px 0;
-    text-align: center;
+	background-color: var(--light-text-color);
+	padding: 80px 0;
+	text-align: center;
 }
 
 .blog-section h2 {
-    color: var(--secondary-color);
-    margin-bottom: 50px;
+	color: var(--secondary-color);
+	margin-bottom: 50px;
 }
 
 .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
 }
 
 .blog-post {
-    background-color: var(--light-text-color);
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+	background-color: var(--light-text-color);
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	overflow: hidden;
+	text-align: left;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .blog-post img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
 }
 
 .blog-post .author {
-    font-size: 0.9em;
-    color: #666;
-    margin: 15px 15px 5px 15px;
+	font-size: 0.9em;
+	color: #666;
+	margin: 15px 15px 5px 15px;
 }
 
 .blog-post h3 {
-    font-size: 1.4em;
-    margin: 0 15px 10px 15px;
-    color: var(--secondary-color);
+	font-size: 1.4em;
+	margin: 0 15px 10px 15px;
+	color: var(--secondary-color);
 }
 
 .blog-post p {
-    font-size: 1em;
-    color: #555;
-    margin: 0 15px 15px 15px;
+	font-size: 1em;
+	color: #555;
+	margin: 0 15px 15px 15px;
 }
 
 .blog-post .post-meta {
-    padding: 0 15px 15px 15px;
-    font-size: 0.9em;
-    color: #888;
+	padding: 0 15px 15px 15px;
+	font-size: 0.9em;
+	color: #888;
+}
+
+/* Research Section */
+.research-section {
+	background-color: var(--gray-background);
+	padding: 80px 0;
+	text-align: center;
+}
+
+.research-section h2 {
+	color: var(--secondary-color);
+	margin-bottom: 10px;
+}
+
+.research-section h3 {
+	color: #666;
+	margin-bottom: 50px;
+	font-size: 1.5em;
+}
+
+.research-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+}
+
+.research-item {
+	background-color: var(--light-text-color);
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	text-align: left;
+}
+
+.research-item h4 {
+	font-size: 1.6em;
+	color: var(--secondary-color);
+	margin-bottom: 15px;
+}
+
+.research-item p {
+	font-size: 1.1em;
+	color: var(--text-color);
 }
