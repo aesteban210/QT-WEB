@@ -2,62 +2,62 @@
 /* ====== Responsive Design: Desktop a Tablet (<= 992px) */
 /* ======================================================= */
 @media (max-width: 992px) {
-    /* 1. Ocultar elementos de navegación */
-    .nav-menu,
-    .nav-bar .btn-primary {
-        display: none;
-    }
+	/* 1. Ocultar elementos de navegación */
+	.nav-menu,
+	.nav-bar .btn-primary {
+		display: none;
+	}
 
-    /* 2. Reducir tipografía del Hero */
-    .hero-content h1 {
-        font-size: 3em;
-    }
-    .hero-content p {
-        font-size: 1.2em;
-    }
+	/* 2. Reducir tipografía del Hero */
+	.hero-content h1 {
+		font-size: 3em;
+	}
+	.hero-content p {
+		font-size: 1.2em;
+	}
 
-    /* 3. Reagrupar Contenedores de 2 Columnas (de Fila a Columna) */
-    .about-section .container,
-    .why-us-section .container,
-    .services-section .container,
-    .contact-section .container,
-    .about-grid { /* Selector .about-grid fusionado */
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+	/* 3. Reagrupar Contenedores de 2 Columnas (de Fila a Columna) */
+	.about-section .container,
+	.why-us-section .container,
+	.services-section .container,
+	.contact-section .container,
+	.about-grid { /* Selector .about-grid fusionado */
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 
-    /* 4. Establecer Ancho Máximo para Contenido (Ajuste al 100%) */
-    .about-text-content,
-    .why-us-section, /* Nota: Este selector podría ser un error de tipeo por .why-us-text-content, pero se respeta su presencia */
-    .services-text-content,
-    .about-description,
-    .why-us-description,
-    .services-description,
-    .contact-form-container,
-    .contact-image,
-    .about-image, /* Selector .about-image fusionado */
-    .about-text { /* Selector .about-text fusionado */
-        max-width: 100%;
-        text-align: center;
-    }
+	/* 4. Establecer Ancho Máximo para Contenido (Ajuste al 100%) */
+	.about-text-content,
+	.why-us-text-content, /* Nota: Este selector podría ser un error de tipeo por .why-us-text-content, pero se respeta su presencia */
+	.services-text-content,
+	.about-description,
+	.why-us-description,
+	.services-description,
+	.contact-form-container,
+	.contact-image,
+	.about-image, /* Selector .about-image fusionado */
+	.about-text { /* Selector .about-text fusionado */
+		max-width: 100%;
+		text-align: center;
+	}
 
-    /* 5. Reducir subtítulos de secciones */
-    .about-text-content h2,
-    .why-us-text-content h2,
-    .services-text-content h2,
-    .contact-form-container h2 {
-        font-size: 2.5em;
-    }
+	/* 5. Reducir subtítulos de secciones */
+	.about-text-content h2,
+	.why-us-text-content h2,
+	.services-text-content h2,
+	.contact-form-container h2 {
+		font-size: 2.5em;
+	}
 
-    /* 6. Ajustar Footer a una sola columna */
-    .footer-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .social-icons {
-        justify-content: center;
-    }
+	/* 6. Ajustar Footer a una sola columna */
+	.footer-grid {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+	.social-icons {
+		justify-content: center;
+	}
 }
 
 
@@ -65,43 +65,43 @@
 /* ====== Responsive Design: Tablet a Móvil (<= 768px) */
 /* ======================================================= */
 @media (max-width: 768px) {
-    /* 1. Ajustes base del Hero */
-    .hero-content {
-        margin-left: 0;
-        text-align: center;
-    }
+	/* 1. Ajustes base del Hero */
+	.hero-content {
+		margin-left: 0;
+		text-align: center;
+	}
 
-    /* 2. Consolidación de Fuentes H1 */
-    .hero-content h1,
-    .services-hero-section h1 { /* Selectores de h1 consolidados */
-        font-size: 2.5em;
-    }
+	/* 2. Consolidación de Fuentes H1 */
+	.hero-content h1,
+	.services-hero-section h1 { /* Selectores de h1 consolidados */
+		font-size: 2.5em;
+	}
 
-    /* 3. Ajustes de tipografía Hero */
-    .hero-content p {
-        font-size: 1em;
-    }
+	/* 3. Ajustes de tipografía Hero */
+	.hero-content p {
+		font-size: 1em;
+	}
 
-    /* 4. Ajustar Grids a una columna */
-    .services-grid,
-    .blog-grid,
-    .research-grid {
-        grid-template-columns: 1fr;
-    }
+	/* 4. Ajustar Grids a una columna */
+	.services-grid,
+	.blog-grid,
+	.research-grid {
+		grid-template-columns: 1fr;
+	}
 
-    /* 5. Ajustar Logo */
-    .logo {
-        font-size: 1.5em;
-    }
+	/* 5. Ajustar Logo */
+	.logo {
+		font-size: 1.5em;
+	}
 
-    /* 6. Ajustes del Botón Flotante de Contacto */
-    .contact-btn { /* Reglas fusionadas del bloque "Ajustes responsivos" */
-        bottom: 20px;
-        padding: 12px 20px;
-        font-size: 0.9em;
-    }
-    .contact-icon {
-        width: 20px;
-        height: 20px;
-    }
+	/* 6. Ajustes del Botón Flotante de Contacto */
+	.contact-btn { /* Reglas fusionadas del bloque "Ajustes responsivos" */
+		bottom: 20px;
+		padding: 12px 20px;
+		font-size: 0.9em;
+	}
+	.contact-icon {
+		width: 20px;
+		height: 20px;
+	}
 }
