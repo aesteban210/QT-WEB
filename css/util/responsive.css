@@ -29,7 +29,7 @@
 
 	/* 4. Establecer Ancho Máximo para Contenido (Ajuste al 100%) */
 	.about-text-content,
-	.why-us-text-content, /* Nota: Este selector podría ser un error de tipeo por .why-us-text-content, pero se respeta su presencia */
+	.why-us-text-content,
 	.services-text-content,
 	.about-description,
 	.why-us-description,
