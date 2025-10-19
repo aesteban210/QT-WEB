@@ -9,10 +9,6 @@
 	--light-text-color: #f8f9fa;
 	--gray-background: #f4f7f6;
 	--dark-gray-background: #1a1a2e;
-	
-	/* ¡Ahora sí funcionará, porque la fuente ya está enlazada en el HTML! */
 	--font-family: 'Montserrat', sans-serif; 
-	
-	/* Puedes usar Montserrat también para los encabezados */
 	--heading-font-family: 'Montserrat', sans-serif; 
 }
