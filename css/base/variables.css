@@ -1,14 +1,41 @@
 /* ======================================================= */
+/* ====== FUENTES TIPOGRÁFICAS PERSONALIZADAS ============ */
+/* ======================================================= */
+
+/* Montserrat Variable - Versión Normal (Peso 100 a 900) */
+@font-face {
+	font-family: 'Montserrat Web';
+	/* Ruta relativa: salimos de 'css' (..), entramos a 'assets', luego a 'fonts' */
+	src: url('../assets/fonts/Montserrat-VariableFont_wght.woff2') format('woff2');
+	font-weight: 100 900; 
+	font-style: normal;
+	font-display: swap; /* Muestra el texto rápidamente con una fuente de reserva */
+}
+
+/* Montserrat Variable - Versión Itálica (Peso 100 a 900) */
+@font-face {
+	font-family: 'Montserrat Web';
+	src: url('../assets/fonts/Montserrat-Italic-VariableFont_wght.woff2') format('woff2');
+	font-weight: 100 900; 
+	font-style: italic;
+	font-display: swap;
+}
+
+/* ======================================================= */
 /* ====== VARIABLES GLOBALES CSS ========================= */
 /* ======================================================= */
 
 :root {
-	--primary-color: #007bff;
-	--secondary-color: #0d1a2f;
+	/* Variables de Color (Las mantienes igual) */
+	--primary-color: #007bff; /* Azul brillante */
+	--secondary-color: #0d1a2f; /* Azul oscuro casi negro */
 	--text-color: #333;
-	--light-text-color: #f8f9fa;
-	--gray-background: #f4f7f6;
-	--dark-gray-background: #1a1a2e;
-	--font-family: 'Montserrat', sans-serif; 
-	--heading-font-family: 'Montserrat', sans-serif; 
+	--light-text-color: #f8f9fa; /* Blanco grisáceo */
+	--gray-background: #f4f7f6; /* Fondo gris claro para secciones */
+	--dark-gray-background: #1a1a2e; /* Fondo oscuro para el header y hero */
+
+	/* Variables de Fuente (Actualizadas para usar la fuente variable) */
+	/* Usamos el nombre 'Montserrat Web' que definimos en @font-face */
+	--font-family: 'Montserrat Web', sans-serif;
+	--heading-font-family: 'Montserrat Web', sans-serif;
 }
