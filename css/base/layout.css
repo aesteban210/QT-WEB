@@ -38,10 +38,15 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(--secondary-color);
 	margin-bottom: 20px;
 	line-height: 1.2;
+
+	/* 🔥 APLICACIÓN DEL GROSOR POR DEFECTO PARA ENCABEZADOS */
+	font-weight: 700; /* Asigna el peso Bold a todos los títulos */
 }
 
 /* Tamaños de Encabezados Específicos */
-h1 { font-size: 3.5em; color: var(--light-text-color); }
+h1 { font-size: 3.5em; color: var(--light-text-color); /* Opcional: Para el título principal, puedes usar un grosor aún mayor, 
+	   como 800 (ExtraBold) o 900 (Black), para darle más impacto visual. */
+	font-weight: 800;}
 h2 { font-size: 2.5em; }
 h3 { font-size: 1.8em; }
 
