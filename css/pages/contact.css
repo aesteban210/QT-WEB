@@ -25,7 +25,7 @@
 	color: var(--secondary-color);
 	margin-bottom: 20px;
 	/* 🔥 AÑADE EL GROSOR AQUÍ PARA FORZAR LA APLICACIÓN */
-	font-weight: 700;
+	/*font-weight: 700;*/
 }
 
 .contact-form-container p {
@@ -36,7 +36,7 @@
 .contact-form label {
 	display: block;
 	margin-bottom: 8px;
-	font-weight: 700;
+	/*font-weight: 700;*/
 	color: var(--text-color);
 }
 
