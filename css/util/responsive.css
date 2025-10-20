@@ -32,7 +32,7 @@
 	/* 4. Establecer Ancho Máximo para Contenido (Ajuste al 100%) */
 	/* 🔥 Se incluyen .general-text y .general-images para que ocupen todo el ancho */
 	.about-text-content,
-	.why-us-content,
+	.why-us-text-content,
 	.services-text-content,
 	.about-description,
 	.why-us-description,
