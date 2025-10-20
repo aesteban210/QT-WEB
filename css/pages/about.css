@@ -65,16 +65,3 @@
 	font-size: 1.1em;
 	color: var(--text-color);
 }
-
-/* Responsive para la página de "Quiénes Somos" */
-@media (max-width: 992px) {
-	.about-grid {
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
-
-	.about-image, .about-text {
-		max-width: 100%;
-	}
-}
