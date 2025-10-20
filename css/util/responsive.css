@@ -17,27 +17,32 @@
 	}
 
 	/* 3. Reagrupar Contenedores de 2 Columnas (de Fila a Columna) */
+	/* 🔥 Se incluye .general-grid para apilar el contenido en la página Valor Diferencial */
 	.about-section .container,
 	.why-us-section .container,
 	.services-section .container,
 	.contact-section .container,
-	.about-grid { /* Selector .about-grid fusionado */
+	.about-grid, 
+	.general-grid { /* Selector .general-grid añadido */
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
 	}
 
 	/* 4. Establecer Ancho Máximo para Contenido (Ajuste al 100%) */
+	/* 🔥 Se incluyen .general-text y .general-images para que ocupen todo el ancho */
 	.about-text-content,
-	.why-us-text-content,
+	.why-us-content,
 	.services-text-content,
 	.about-description,
 	.why-us-description,
 	.services-description,
 	.contact-form-container,
 	.contact-image,
-	.about-image, /* Selector .about-image fusionado */
-	.about-text { /* Selector .about-text fusionado */
+	.about-image, 
+	.about-text, 
+	.general-text, /* Nuevo: Contenido de texto general */
+	.general-images { /* Nuevo: Contenido de imagen general */
 		max-width: 100%;
 		text-align: center;
 	}
@@ -73,7 +78,7 @@
 
 	/* 2. Consolidación de Fuentes H1 */
 	.hero-content h1,
-	.services-hero-section h1 { /* Selectores de h1 consolidados */
+	.services-hero-section h1 { 
 		font-size: 2.5em;
 	}
 
@@ -95,7 +100,7 @@
 	}
 
 	/* 6. Ajustes del Botón Flotante de Contacto */
-	.contact-btn { /* Reglas fusionadas del bloque "Ajustes responsivos" */
+	.contact-btn { 
 		bottom: 20px;
 		padding: 12px 20px;
 		font-size: 0.9em;
