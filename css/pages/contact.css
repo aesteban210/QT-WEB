@@ -24,6 +24,8 @@
 	font-size: 3em;
 	color: var(--secondary-color);
 	margin-bottom: 20px;
+	/* 🔥 AÑADE EL GROSOR AQUÍ PARA FORZAR LA APLICACIÓN */
+	font-weight: 700;
 }
 
 .contact-form-container p {
