@@ -14,7 +14,7 @@
 	min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	text-align: center;
 	padding-top: 0;
 }
