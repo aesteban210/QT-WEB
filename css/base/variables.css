@@ -15,7 +15,7 @@
 /* Montserrat Variable - Versión Itálica (Peso 100 a 900) */
 @font-face {
 	font-family: 'Montserrat Web';
-	src: url('../../assets/fonts/montserrat-variablefont_wght-webfont.woff2') format('woff2');
+	src: url('../../assets/fonts/montserrat-italic-variablefont_wght-webfont.woff2') format('woff2');
 	font-weight: 100 900; 
 	font-style: italic;
 	font-display: swap;
