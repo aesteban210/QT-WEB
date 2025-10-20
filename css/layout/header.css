@@ -23,7 +23,6 @@
 /* Logo (ESTILOS MODIFICADOS PARA EL ENLACE <a>) */
 .logo {
 	font-size: 1.8em;
-	/*font-weight: 700;*/
 	display: flex;
 	align-items: center;
 	
@@ -57,7 +56,6 @@
 
 .nav-menu ul li a {
 	color: var(--light-text-color);
-	/*font-weight: 700;*/
 	padding: 5px 0;
 	position: relative;
 	transition: color 0.3s ease;
