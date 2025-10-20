@@ -7,7 +7,6 @@
     display: inline-block;
     padding: 12px 25px;
     border-radius: 5px;
-    /*font-weight: 700;*/
     text-align: center;
     transition: background-color 0.3s ease;
 }
@@ -55,7 +54,6 @@
     padding: 15px 25px;
     text-decoration: none;
     font-size: 1.1em;
-    /*font-weight: 700;*/
     border-radius: 5px 0 0 5px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -66,7 +64,6 @@
     display: block;
     width: 24px;
     height: 24px;
-    /* Asegúrese de que la ruta 'assets/images/general/contact_service.png' sea correcta */
     background: url('../../assets/images/general/contact_service.png') no-repeat center center;
     background-size: contain;
 }
