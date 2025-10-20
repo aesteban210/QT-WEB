@@ -2,23 +2,21 @@
 /* ====== FUENTES TIPOGRÁFICAS PERSONALIZADAS ============ */
 /* ======================================================= */
 
-/* Montserrat Variable - Versión Normal (Peso 100 a 900) */
 @font-face {
-	font-family: 'Montserrat Web';
-	/* Ruta relativa: salimos de 'css' (..), entramos a 'assets', luego a 'fonts' */
-	src: url('../../assets/fonts/montserrat-variablefont_wght-webfont.woff2') format('woff2');
-	font-weight: 100 900; 
-	font-style: normal;
-	font-display: swap; /* Muestra el texto rápidamente con una fuente de reserva */
+  font-family: 'Montserrat Web';
+  src: url('../../assets/fonts/montserrat-variablefont_wght-webfont.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  font-variation-settings: 'wght' 400;
 }
 
-/* Montserrat Variable - Versión Itálica (Peso 100 a 900) */
 @font-face {
-	font-family: 'Montserrat Web';
-	src: url('../../assets/fonts/montserrat-italic-variablefont_wght-webfont.woff2') format('woff2');
-	font-weight: 100 900; 
-	font-style: italic;
-	font-display: swap;
+  font-family: 'Montserrat Web';
+  src: url('../../assets/fonts/montserrat-italic-variablefont_wght-webfont.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 /* ======================================================= */
@@ -26,16 +24,23 @@
 /* ======================================================= */
 
 :root {
-	/* Variables de Color (Las mantienes igual) */
-	--primary-color: #007bff; /* Azul brillante */
-	--secondary-color: #0d1a2f; /* Azul oscuro casi negro */
-	--text-color: #333;
-	--light-text-color: #f8f9fa; /* Blanco grisáceo */
-	--gray-background: #f4f7f6; /* Fondo gris claro para secciones */
-	--dark-gray-background: #1a1a2e; /* Fondo oscuro para el header y hero */
+  --font-family: 'Montserrat Web', sans-serif;
+  --heading-font-family: 'Montserrat Web', sans-serif;
+  --text-color: #333;
+}
 
-	/* Variables de Fuente (Actualizadas para usar la fuente variable) */
-	/* Usamos el nombre 'Montserrat Web' que definimos en @font-face */
-	--font-family: 'Montserrat Web', sans-serif;
-	--heading-font-family: 'Montserrat Web', sans-serif;
+/* Estilos base */
+html, body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Títulos más gruesos */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
 }
